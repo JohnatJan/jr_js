@@ -5,7 +5,7 @@ function CheckRegion() {
         document.getElementById('capture_traditionalRegistration_form_item_dataWWID').style.display = "block";
 }
 function initCheckRegion() {
-    document.getElementById('capture_traditionalRegistration_dataRegion').onchange = CheckRegion();
+    document.getElementById('capture_traditionalRegistration_dataRegion').onchange = CheckRegion;
     CheckRegion();
 }
 
