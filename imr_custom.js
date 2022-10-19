@@ -9,4 +9,4 @@ function initCheckRegion() {
     CheckRegion();
 }
 
-janrainCaptureWidgetOnLoad = initCheckRegion;
+initCheckRegion();
