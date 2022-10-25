@@ -9,7 +9,7 @@ function initCheckRegion() {
     CheckRegion();
 }
 function janrainCaptureWidgetOnLoad(){
-  janrain.events.onCaptureLoginSuccess.addHandler(initCheckRegion);
+  initCheckRegion();
   janrain.capture.ui.start();
 
 }
