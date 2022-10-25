@@ -13,6 +13,7 @@ function initCheckRegion() {
     }
     CheckRegion();
 }
+/*
 function janrainCaptureWidgetOnLoad(){
     while (document.getElementById('capture_traditionalRegistration_dataRegion') == null) {
         try {
@@ -23,3 +24,4 @@ function janrainCaptureWidgetOnLoad(){
     }
   janrain.capture.ui.start();
 }
+*/
