@@ -5,7 +5,10 @@ function CheckRegion() {
         document.getElementById('capture_traditionalRegistration_form_item_dataWWID').style.display = "block";
 }
 function initCheckRegion() {
-    document.getElementById('capture_traditionalRegistration_dataRegion').onchange = CheckRegion;
+    while (document.getElementById('capture_traditionalRegistration_dataRegion') == null) {
+        document.getElementById('capture_traditionalRegistration_dataRegion').onchange = CheckRegion;
+        setTimeout(500);
+    }
     CheckRegion();
 }
 function janrainCaptureWidgetOnLoad(){
