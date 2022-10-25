@@ -6,7 +6,9 @@ function CheckRegion() {
 }
 function initCheckRegion() {
     while (document.getElementById('capture_traditionalRegistration_dataRegion') == null) {
+        try {
         document.getElementById('capture_traditionalRegistration_dataRegion').onchange = CheckRegion;
+        }catch (err) {}
         setTimeout(500);
     }
     CheckRegion();
