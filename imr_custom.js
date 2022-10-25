@@ -8,5 +8,6 @@ function initCheckRegion() {
     document.getElementById('capture_traditionalRegistration_dataRegion').onchange = CheckRegion;
     CheckRegion();
 }
-
-initCheckRegion();
+function janrainCaptureWidgetOnLoad(){
+  janrain.events.onCaptureLoginSuccess.addHandler(initCheckRegion);
+}
