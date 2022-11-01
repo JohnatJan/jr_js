@@ -13,9 +13,3 @@ function initCheckRegion() {
     }
     CheckRegion();
 }
-
-function janrainCaptureWidgetOnLoad(){
-
-  //console.log(document.getElementById('capture_traditionalRegistration_dataRegion'));
-  janrain.capture.ui.start();
-}
