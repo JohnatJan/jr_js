@@ -5,15 +5,19 @@ function CheckRegion() {
         document.getElementById('capture_traditionalRegistration_form_item_dataWWID').style.display = "block";
 }
 function initCheckRegion() {
-        while (document.getElementById('capture_traditionalRegistration_dataRegion') == null) {
+    console.log("attempting to wire event.");
         try {
             document.getElementById('capture_traditionalRegistration_dataRegion').onchange = CheckRegion;
             break;
         }catch (err) {}
-        setTimeout(500);
+
     }
     CheckRegion();
 }
-janrain.events.onCaptureScreenShow.addHandler(function(result){
-     initCheckRegion();
-    });
+function janrainCaptureWidgetOnLoad(){
+  initCheckRegion
+  janrain.events.onCaptureLoginSuccess.addHandler(function(event){
+    // do stuff
+  }
+  janrain.capture.ui.start();
+}
