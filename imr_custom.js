@@ -16,6 +16,6 @@ function initCheckRegion() {
 
 function janrainCaptureWidgetOnLoad(){
 
-  console.log(document.getElementById('capture_traditionalRegistration_dataRegion'));
+  //console.log(document.getElementById('capture_traditionalRegistration_dataRegion'));
   janrain.capture.ui.start();
 }
