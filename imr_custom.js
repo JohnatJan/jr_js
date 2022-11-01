@@ -8,11 +8,12 @@ function initCheckRegion() {
     console.log("attempting to wire event.");
         try {
             document.getElementById('capture_traditionalRegistration_dataRegion').onchange = CheckRegion;
-            break;
+            CheckRegion();
+            return true;
         }catch (err) {}
 
     }
-    CheckRegion();
+
 }
 
 // This function is called by the Capture Widget when it has completred loading
