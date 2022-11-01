@@ -15,5 +15,5 @@ function initCheckRegion() {
     CheckRegion();
 }
 janrain.events.onCaptureScreenShow.addHandler(function(result){
-     initCheckRegion;
+     initCheckRegion();
     });
