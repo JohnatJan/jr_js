@@ -17,7 +17,6 @@ function initCheckRegion() {
 // itself and all other dependencies. This function is required, and must call
 // janrain.capture.ui.start() for the Widget to initialize correctly.
 function janrainCaptureWidgetOnLoad() {
-    var implFuncs = janrainExampleImplementationFunctions(); // Located below.
 
     /*--
         SHOW EVENTS:
