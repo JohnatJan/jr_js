@@ -16,14 +16,6 @@ function initCheckRegion() {
 
 function janrainCaptureWidgetOnLoad(){
 
-    console.log(document.getElementById('capture_traditionalRegistration_dataRegion'));
-    while (document.getElementById('capture_traditionalRegistration_dataRegion') == null) {
-            console.log(document.getElementById('capture_traditionalRegistration_dataRegion'));
-        try {
-            document.getElementById('capture_traditionalRegistration_dataRegion').onchange = CheckRegion;
-        }catch (err) {}
-        
-        setTimeout(500);
-    }
+  console.log(document.getElementById('capture_traditionalRegistration_dataRegion'));
   janrain.capture.ui.start();
 }
