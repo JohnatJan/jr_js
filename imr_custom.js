@@ -26,6 +26,6 @@ function janrainCaptureWidgetOnLoad() {
     });
 */
     janrain.capture.ui.start();
-        document.write('<script type="text/javascript" defer="defer">initCheckRegion();</script>');
+//        document.write('<script type="text/javascript" defer="defer">initCheckRegion();</script>');
 
 }
