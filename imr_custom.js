@@ -17,7 +17,6 @@ function initCheckRegion() {
         console.log(err);
     }
 }
-    document.write('<script type="text/javascript" defer="defer">initCheckRegion();</script>');
 
 function janrainCaptureWidgetOnLoad() {
 /*                                                                            
@@ -27,4 +26,6 @@ function janrainCaptureWidgetOnLoad() {
     });
 */
     janrain.capture.ui.start();
+        document.write('<script type="text/javascript" defer="defer">initCheckRegion();</script>');
+
 }
