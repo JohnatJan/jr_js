@@ -17,15 +17,16 @@ function initCheckRegion() {
         console.log(err);
     }
 }
-
+/*
 function janrainCaptureWidgetOnLoad() {
-/*                                                                            
+                                                                            
     janrain.events.onCaptureRenderComplete.addHandler(function(result) {
         setTimeout(3000);
         initCheckRegion()
     });
-*/
+
     janrain.capture.ui.start();
-//        document.write('<script type="text/javascript" defer="defer">initCheckRegion();</script>');
+        document.write('<script type="text/javascript" defer="defer">initCheckRegion();</script>');
 
 }
+*/
