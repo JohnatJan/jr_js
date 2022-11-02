@@ -23,7 +23,7 @@ function initCheckRegion() {
 
 function janrainCaptureWidgetOnLoad() {
                                                                             
-    janrain.events.onCaptureRenderStart.addHandler(function(result) {
+    janrain.events.onCaptureRenderComplete.addHandler(function(result) {
           initCheckRegion()
     });
 
