@@ -24,7 +24,8 @@ function initCheckRegion() {
 function janrainCaptureWidgetOnLoad() {
                                                                             
     janrain.events.onCaptureRenderComplete.addHandler(function(result) {
-          initCheckRegion()
+        setTimeout(1000);
+        initCheckRegion()
     });
 
     janrain.capture.ui.start();
