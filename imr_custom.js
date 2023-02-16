@@ -9,7 +9,7 @@
                 { 
                     const urlParams = new URLSearchParams(window.location.search);
                     const emailAddress = urlParams.get('login_hint');
-                    $("[name='signInEmailAddress']").value = emailAddress; 
+                    document.getElementsByName("signInEmailAddress")[0].value = emailAddress; 
                 }
         });
 
