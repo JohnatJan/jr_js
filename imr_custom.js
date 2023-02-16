@@ -17,19 +17,6 @@ function initCheckRegion() {
         console.log(err);
     }
 }
-/*
-function janrainCaptureWidgetOnLoad() {
-                                                                            
-    janrain.events.onCaptureRenderComplete.addHandler(function(result) {
-        setTimeout(3000);
-        initCheckRegion()
-    });
-
-    janrain.capture.ui.start();
-        document.write('<script type="text/javascript" defer="defer">initCheckRegion();</script>');
-
-}
-*/
 (function() {
     if (typeof window.janrain !== 'object') window.janrain = {};
     if (typeof window.janrain.settings !== 'object') window.janrain.settings = {};
@@ -37,8 +24,12 @@ function janrainCaptureWidgetOnLoad() {
     function isReady() { 
         janrain.ready = true; 
         janrain.events.onCaptureRenderComplete.addHandler(function(result) {
-            setTimeout(3000);
-            initCheckRegion()
+                if(janrain.gizmo.screenToRender == 'resetPassword' || janrain.gizmo.screenToRender == 'verifyEmail') 
+                { 
+                    const urlParams = new URLSearchParams(window.location.search);
+                    const emailAddress = urlParams.get('login_hint');
+                    $("[name='signInEmailAddress']").value = emailAddress; 
+                }
         });
 
         janrain.capture.ui.start();
