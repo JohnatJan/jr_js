@@ -1,0 +1,1033 @@
+@font-face{
+    font-family:system;
+    font-style:normal;
+    font-weight:300;
+    src:local(".SFNSText-Light"),local(".HelveticaNeueDeskInterface-Light"),local(".LucidaGrandeUI"),local("Ubuntu Light"),local("Segoe UI Light"),local("Roboto-Light"),local("DroidSans"),local("Tahoma")
+}
+body{
+    font-family:"system";
+    background-color:#f2f2f2;
+    margin:0
+}
+h1,h2,h3,h4,h5,h6,p,a,form,span{
+    color:#444;
+    font-size:14px
+}
+h1,h2,h3{
+    font-weight:bold;
+    line-height:125%
+}
+h1{
+    margin-bottom:20px;
+    font-size:22px
+}
+h2{
+    margin-bottom:15px;
+    font-size:18px
+}
+h3{
+    margin-bottom:10px;
+    font-size:16px
+}
+p{
+    margin-bottom:15px;
+    font-size:14px;
+    line-height:150%
+}
+a{
+    text-decoration:underline
+}
+a:hover{
+    color:#5f80c5
+}
+button{
+    background-color:#5f80c5;
+    border:1px solid #5f80c5;
+    border-radius:2px;
+    cursor:pointer;
+    color:#fff;
+    padding:10px 15px;
+    margin:0px;
+    font-size:18px
+}
+button:hover{
+    background-color:#3f5fa1
+}
+button.secondary{
+    background-color:#fff;
+    color:#5f80c5
+}
+button.secondary:hover{
+    background-color:#ecf2ff
+}
+button.danger{
+    background-color:#fa5151;
+    border:1px solid #de0606
+}
+button.danger:hover{
+    background-color:#de0606
+}
+form{
+    max-width:500px;
+    min-width:315px
+}
+form label{
+    color:#666;
+    display:block;
+    font-weight:bold;
+    font-size:14px;
+    margin-bottom:5px
+}
+form input{
+    border:1px solid #979797;
+    margin-bottom:15px;
+    color:#444;
+    padding:7px;
+    border-radius:2px;
+    width:100%;
+    box-sizing:border-box
+}
+form input:focus{
+    border-color:#5f80c5;
+    outline:none
+}
+hr{
+    margin-top:1em;
+    margin-bottom:1em
+}
+.aic-control{
+    cursor:pointer
+}
+.chevron::before{
+    border-style:solid;
+    border-width:.12em .12em 0 0;
+    content:"";
+    display:inline-block;
+    height:.65em;
+    left:.15em;
+    position:relative;
+    top:.32em;
+    transform:rotate(-45deg);
+    vertical-align:top;
+    width:.65em;
+    border-color:#979797
+}
+.chevron.right:before,.lang-rtl .chevron.left:before{
+    left:0;
+    transform:rotate(45deg)
+}
+.chevron.bottom:before{
+    top:0;
+    transform:rotate(135deg)
+}
+.chevron.left:before,.lang-rtl .chevron.right:before{
+    left:.25em;
+    transform:rotate(-135deg)
+}
+.success-check{
+    display:inline-block;
+    height:80px;
+    width:80px;
+    min-width:80px;
+    border-radius:50px;
+    background-color:#57d38f;
+    border:1px solid #31b06a
+}
+.success-check::before{
+    border-color:#fff;
+    border-style:solid;
+    border-width:0px 6px 6px 0px;
+    position:relative;
+    top:14px;
+    left:29px;
+    height:38px;
+    width:20px;
+    content:"";
+    display:inline-block;
+    transform:rotate(45deg)
+}
+.toastify.error{
+    background:linear-gradient(135deg, #FA5151, #DE0606)
+}
+.toastify .toast-close{
+    padding-right:0px;
+    padding-left:10px
+}
+.error-cross{
+    display:inline-block;
+    height:80px;
+    width:80px;
+    min-width:80px;
+    border-radius:50px;
+    background-color:#b00020;
+    border:1px solid #b00020
+}
+.error-cross::before{
+    background-color:#fff;
+    position:relative;
+    top:18px;
+    left:37px;
+    height:44px;
+    width:6px;
+    content:"";
+    display:inline-block;
+    transform:rotate(45deg)
+}
+.error-cross::after{
+    background-color:#fff;
+    position:relative;
+    top:18px;
+    left:31px;
+    height:44px;
+    width:6px;
+    content:"";
+    display:inline-block;
+    transform:rotate(-45deg)
+}
+#main-container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding-top:25px;
+    padding-bottom:25px
+}
+#content-wrapper{
+    background-color:#fff;
+    box-shadow:1px 1px 5px 2px rgba(0,0,0,.1)
+}
+#header-container{
+    padding:20px;
+    border-bottom:1px solid #f2f2f2;
+    display:flex;
+    align-items:center;
+    justify-content:center
+}
+.screen{
+    min-width:460px
+}
+.screen>.content-wrapper{
+    margin-bottom:20px;
+    padding:25px 50px
+}
+.screen-heading{
+    margin-top:0
+}
+.additional-actions-container{
+    padding:25px;
+    text-align:center
+}
+.footer-container{
+    padding:25px;
+    border-top:1px solid #f2f2f2;
+    text-align:center
+}
+.alternative-credentials{
+    display:block;
+    font-weight:bold;
+    margin-bottom:15px
+}
+.cancel-link{
+    display:block;
+    margin-bottom:10px
+}
+.traditional-signin{
+    position:relative
+}
+.forgot-password-link{
+    position:absolute;
+    right:8px;
+    bottom:0
+}
+.lang-rtl .forgot-password-link{
+    right:unset;
+    left:8px
+}
+.form-action-buttons{
+    margin:0 -10px
+}
+.form-action-buttons button{
+    margin:0 10px
+}
+.flex-container{
+    display:flex
+}
+.flex-row{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    margin:0 -8px
+}
+.flex-quad{
+    flex-grow:1;
+    flex-basis:0;
+    margin:8px;
+    min-width:270px
+}
+.manage-screen.content-wrapper{
+    position:relative
+}
+.logout{
+    position:absolute;
+    top:25px;
+    right:50px
+}
+.profile-header{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap
+}
+.profile-header>div{
+    flex-grow:1;
+    flex-basis:0
+}
+.profile-header-image{
+    text-align:right
+}
+.profile-header-image .profile-image{
+    margin-right:20px;
+    border-radius:50%;
+    max-height:100px;
+    max-width:100px
+}
+.profile-management-card{
+    background-color:#fff;
+    box-shadow:1px 1px 5px 2px rgba(0,0,0,.1);
+    min-width:270px;
+    max-width:915px;
+    margin-top:15px;
+    overflow:auto
+}
+.profile-management-card form{
+    margin:0 auto
+}
+.profile-management-card.large .card-body{
+    padding:25px
+}
+.profile-management-card.large .card-heading .chevron.left{
+    margin-left:60px
+}
+.profile-management-card.large .card-heading .card-icon{
+    margin-left:100px
+}
+.card-body{
+    padding:15px 25px
+}
+.card-heading{
+    border-bottom:1px solid #f2f2f2;
+    position:relative
+}
+.card-heading .card-icon{
+    background-size:25px 25px;
+    height:25px;
+    width:25px;
+    display:inline-block;
+    margin:0 15px;
+    position:relative;
+    top:3px
+}
+.card-heading .card-icon.profile-data{
+    background-image:url("/auth-ui/static/personal_data_icon.png")
+}
+.card-heading .card-icon.profile-preferences{
+    background-image:url("/auth-ui/static/content_prefs_icon.png")
+}
+.card-heading .card-icon.profile-security{
+    background-image:url("/auth-ui/static/account_security_icon.png")
+}
+.card-heading .card-icon.profile-privacy{
+    background-image:url("/auth-ui/static/privacy_settings_icon.png")
+}
+.card-heading .chevron.right{
+    position:absolute;
+    top:6px;
+    right:0;
+    margin-right:20px
+}
+.card-heading .chevron.left{
+    position:absolute;
+    top:6px;
+    left:0;
+    margin-left:20px
+}
+.action-card{
+    flex-grow:1;
+    flex-basis:0;
+    margin:8px;
+    background-color:#f2f2f2;
+    padding:0 20px 20px 20px
+}
+.profile-privacy .profile-management-card form{
+    max-width:unset
+}
+.auth-success-screen.content-wrapper{
+    max-width:275px;
+    margin:0 auto 20px;
+    padding:25px 0 25px 75px
+}
+.auth-success-screen.content-wrapper .screen-heading{
+    display:inline-block;
+    margin:0 0 0 10px;
+    max-width:175px;
+    vertical-align:middle
+}
+.auth-screen.content-wrapper{
+    max-width:500px
+}
+.social-login-buttons ul{
+    list-style:none;
+    padding:0;
+    margin:0
+}
+.social-login-buttons button{
+    margin:5px 0;
+    padding:0;
+    width:100%
+}
+.social-login-buttons button.google{
+    background-color:#4285f4
+}
+.social-login-buttons button.google:hover{
+    background-color:#3367d6
+}
+.social-login-buttons button.facebook{
+    background-color:#4267b2
+}
+.social-login-buttons button.facebook:hover{
+    background-color:#2b467e
+}
+.social-login-buttons button.twitter{
+    background-color:#1da1f2
+}
+.social-login-buttons button.twitter:hover{
+    background-color:#0060d4
+}
+.social-login-buttons .content-wrapper{
+    display:block;
+    max-width:55%;
+    margin:0 auto;
+    text-align:left;
+    padding:5px 0
+}
+.social-login-buttons .provider-name{
+    font-size:18px;
+    color:#fff
+}
+.flex-quad .social-login-buttons .content-wrapper{
+    max-width:75%
+}
+.lang-rtl .social-login-buttons .content-wrapper{
+    text-align:right
+}
+.lang-rtl .social-login-buttons .social-provider-icon{
+    margin-right:0;
+    margin-left:15px
+}
+.social-provider-icon{
+    display:inline-block;
+    margin-right:15px;
+    background-color:#fff;
+    height:39px;
+    width:39px;
+    background-size:39px;
+    vertical-align:middle;
+    border-radius:3px
+}
+.region-global .social-provider-icon.janrain,.region-global .janrain-provider-icon-janrain{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/janrain.png)
+}
+.region-global .social-provider-icon.placeholder,.region-global .janrain-provider-icon-placeholder{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/placeholder.png)
+}
+.region-global .social-provider-icon.email,.region-global .janrain-provider-icon-email{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/email.png)
+}
+.region-global .social-provider-icon.fimnet,.region-global .janrain-provider-icon-fimnet{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/fimnet.png)
+}
+.region-global .social-provider-icon.fimnet_oidc,.region-global .janrain-provider-icon-fimnet_oidc{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/fimnet_oidc.png)
+}
+.region-global .social-provider-icon.medikey,.region-global .janrain-provider-icon-medikey{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/medikey.png)
+}
+.region-global .social-provider-icon.doccheck,.region-global .janrain-provider-icon-doccheck{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/doccheck.png)
+}
+.region-global .social-provider-icon.onekey,.region-global .janrain-provider-icon-onekey{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/onekey.png)
+}
+.region-global .social-provider-icon.onekeydev,.region-global .janrain-provider-icon-onekeydev{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/onekeydev.png)
+}
+.region-global .social-provider-icon.mydigipass,.region-global .janrain-provider-icon-mydigipass{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/mydigipass.png)
+}
+.region-global .social-provider-icon.xing,.region-global .janrain-provider-icon-xing{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/xing.png)
+}
+.region-global .social-provider-icon.vk,.region-global .janrain-provider-icon-vk{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/vk.png)
+}
+.region-global .social-provider-icon.odnoklassniki,.region-global .janrain-provider-icon-odnoklassniki{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/odnoklassniki.png)
+}
+.region-global .social-provider-icon.myopenid,.region-global .janrain-provider-icon-myopenid{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/myopenid.png)
+}
+.region-global .social-provider-icon.mixi,.region-global .janrain-provider-icon-mixi{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/mixi.png)
+}
+.region-global .social-provider-icon.livejournal,.region-global .janrain-provider-icon-livejournal{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/livejournal.png)
+}
+.region-global .social-provider-icon.aol,.region-global .janrain-provider-icon-aol{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/aol.png)
+}
+.region-global .social-provider-icon.amazon,.region-global .janrain-provider-icon-amazon{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/amazon.png)
+}
+.region-global .social-provider-icon.openid,.region-global .janrain-provider-icon-openid{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/openid.png)
+}
+.region-global .social-provider-icon.googleplus,.region-global .janrain-provider-icon-googleplus{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/googleplus.png)
+}
+.region-global .social-provider-icon.google,.region-global .janrain-provider-icon-google{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/google.png)
+}
+.region-global .social-provider-icon.facebook,.region-global .janrain-provider-icon-facebook{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/facebook.png)
+}
+.region-global .social-provider-icon.twitter,.region-global .janrain-provider-icon-twitter{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/twitter.png)
+}
+.region-global .social-provider-icon.myspace,.region-global .janrain-provider-icon-myspace{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/myspace.png)
+}
+.region-global .social-provider-icon.instagram,.region-global .janrain-provider-icon-instagram{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/instagram.png)
+}
+.region-global .social-provider-icon.disqus,.region-global .janrain-provider-icon-disqus{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/disqus.png)
+}
+.region-global .social-provider-icon.microsoftaccount,.region-global .janrain-provider-icon-microsoftaccount{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/microsoftaccount.png)
+}
+.region-global .social-provider-icon.live_id,.region-global .janrain-provider-icon-live_id{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/live_id.png)
+}
+.region-global .social-provider-icon.yahoo,.region-global .janrain-provider-icon-yahoo{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/yahoo.png)
+}
+.region-global .social-provider-icon.yahoo-oauth2,.region-global .janrain-provider-icon-yahoo-oauth2{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/yahoo-oauth2.png)
+}
+.region-global .social-provider-icon.netlog,.region-global .janrain-provider-icon-netlog{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/netlog.png)
+}
+.region-global .social-provider-icon.flickr,.region-global .janrain-provider-icon-flickr{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/flickr.png)
+}
+.region-global .social-provider-icon.blogger,.region-global .janrain-provider-icon-blogger{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/blogger.png)
+}
+.region-global .social-provider-icon.verisign,.region-global .janrain-provider-icon-verisign{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/verisign.png)
+}
+.region-global .social-provider-icon.wordpress,.region-global .janrain-provider-icon-wordpress{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/wordpress.png)
+}
+.region-global .social-provider-icon.hyves,.region-global .janrain-provider-icon-hyves{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/hyves.png)
+}
+.region-global .social-provider-icon.linkedin,.region-global .janrain-provider-icon-linkedin{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/linkedin.png)
+}
+.region-global .social-provider-icon.linkedin-oauth2,.region-global .janrain-provider-icon-linkedin-oauth2{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/linkedin-oauth2.png)
+}
+.region-global .social-provider-icon.paypal,.region-global .janrain-provider-icon-paypal{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/paypal.png)
+}
+.region-global .social-provider-icon.paypal_openidconnect,.region-global .janrain-provider-icon-paypal_openidconnect{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/paypal_openidconnect.png)
+}
+.region-global .social-provider-icon.salesforce,.region-global .janrain-provider-icon-salesforce{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/salesforce.png)
+}
+.region-global .social-provider-icon.orkut,.region-global .janrain-provider-icon-orkut{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/orkut.png)
+}
+.region-global .social-provider-icon.vzn,.region-global .janrain-provider-icon-vzn{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/vzn.png)
+}
+.region-global .social-provider-icon.tumblr,.region-global .janrain-provider-icon-tumblr{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/tumblr.png)
+}
+.region-global .social-provider-icon.foursquare,.region-global .janrain-provider-icon-foursquare{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/foursquare.png)
+}
+.region-global .social-provider-icon.sinaweibo,.region-global .janrain-provider-icon-sinaweibo{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/sinaweibo.png)
+}
+.region-global .social-provider-icon.renren,.region-global .janrain-provider-icon-renren{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/renren.png)
+}
+.region-global .social-provider-icon.tencentweibo,.region-global .janrain-provider-icon-tencentweibo{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/tencentweibo.png)
+}
+.region-global .social-provider-icon.soundcloud,.region-global .janrain-provider-icon-soundcloud{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/soundcloud.png)
+}
+.region-global .social-provider-icon.samltest,.region-global .janrain-provider-icon-samltest{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/samltest.png)
+}
+.region-global .social-provider-icon.lilly,.region-global .janrain-provider-icon-lilly{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/lilly.png)
+}
+.region-global .social-provider-icon.pinterest,.region-global .janrain-provider-icon-pinterest{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/pinterest.png)
+}
+.region-global .social-provider-icon.jnj,.region-global .janrain-provider-icon-jnj{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/jnj.png)
+}
+.region-global .social-provider-icon.qq,.region-global .janrain-provider-icon-qq{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/qq.png)
+}
+.region-global .social-provider-icon.media_id,.region-global .janrain-provider-icon-media_id{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/media_id.png)
+}
+.region-global .social-provider-icon.doximity,.region-global .janrain-provider-icon-doximity{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/doximity.png)
+}
+.region-global .social-provider-icon.medy,.region-global .janrain-provider-icon-medy{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/medy.png)
+}
+.region-global .social-provider-icon.wechat,.region-global .janrain-provider-icon-wechat{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/wechat.png)
+}
+.region-global .social-provider-icon.mcdonalds,.region-global .janrain-provider-icon-mcdonalds{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/mcdonalds.png)
+}
+.region-global .social-provider-icon.sanofi,.region-global .janrain-provider-icon-sanofi{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/sanofi.png)
+}
+.region-global .social-provider-icon.pg,.region-global .janrain-provider-icon-pg{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/pg.png)
+}
+.region-global .social-provider-icon.bdc,.region-global .janrain-provider-icon-bdc{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/bdc.png)
+}
+.region-global .social-provider-icon.microsoftonline,.region-global .janrain-provider-icon-microsoftonline{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/microsoftonline.png)
+}
+.region-global .social-provider-icon.m3medical,.region-global .janrain-provider-icon-m3medical{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/m3medical.png)
+}
+.region-global .social-provider-icon.torstar,.region-global .janrain-provider-icon-torstar{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/torstar.png)
+}
+.region-global .social-provider-icon.dollartree,.region-global .janrain-provider-icon-dollartree{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/dollartree.png)
+}
+.region-global .social-provider-icon.footlocker,.region-global .janrain-provider-icon-footlocker{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/footlocker.png)
+}
+.region-global .social-provider-icon.biogen,.region-global .janrain-provider-icon-biogen{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/biogen.png)
+}
+.region-global .social-provider-icon.apple,.region-global .janrain-provider-icon-apple{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/apple.png)
+}
+.region-global .social-provider-icon.line,.region-global .janrain-provider-icon-line{
+    background-image:url(https://quilt-cdn.janrain.com/HEAD/icons/janrain-providers/line.png)
+}
+.region-china .social-provider-icon.janrain,.region-china .janrain-provider-icon-janrain{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/janrain.png)
+}
+.region-china .social-provider-icon.placeholder,.region-china .janrain-provider-icon-placeholder{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/placeholder.png)
+}
+.region-china .social-provider-icon.email,.region-china .janrain-provider-icon-email{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/email.png)
+}
+.region-china .social-provider-icon.fimnet,.region-china .janrain-provider-icon-fimnet{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/fimnet.png)
+}
+.region-china .social-provider-icon.fimnet_oidc,.region-china .janrain-provider-icon-fimnet_oidc{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/fimnet_oidc.png)
+}
+.region-china .social-provider-icon.medikey,.region-china .janrain-provider-icon-medikey{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/medikey.png)
+}
+.region-china .social-provider-icon.doccheck,.region-china .janrain-provider-icon-doccheck{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/doccheck.png)
+}
+.region-china .social-provider-icon.onekey,.region-china .janrain-provider-icon-onekey{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/onekey.png)
+}
+.region-china .social-provider-icon.onekeydev,.region-china .janrain-provider-icon-onekeydev{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/onekeydev.png)
+}
+.region-china .social-provider-icon.mydigipass,.region-china .janrain-provider-icon-mydigipass{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/mydigipass.png)
+}
+.region-china .social-provider-icon.xing,.region-china .janrain-provider-icon-xing{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/xing.png)
+}
+.region-china .social-provider-icon.vk,.region-china .janrain-provider-icon-vk{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/vk.png)
+}
+.region-china .social-provider-icon.odnoklassniki,.region-china .janrain-provider-icon-odnoklassniki{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/odnoklassniki.png)
+}
+.region-china .social-provider-icon.myopenid,.region-china .janrain-provider-icon-myopenid{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/myopenid.png)
+}
+.region-china .social-provider-icon.mixi,.region-china .janrain-provider-icon-mixi{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/mixi.png)
+}
+.region-china .social-provider-icon.livejournal,.region-china .janrain-provider-icon-livejournal{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/livejournal.png)
+}
+.region-china .social-provider-icon.aol,.region-china .janrain-provider-icon-aol{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/aol.png)
+}
+.region-china .social-provider-icon.amazon,.region-china .janrain-provider-icon-amazon{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/amazon.png)
+}
+.region-china .social-provider-icon.openid,.region-china .janrain-provider-icon-openid{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/openid.png)
+}
+.region-china .social-provider-icon.googleplus,.region-china .janrain-provider-icon-googleplus{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/googleplus.png)
+}
+.region-china .social-provider-icon.google,.region-china .janrain-provider-icon-google{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/google.png)
+}
+.region-china .social-provider-icon.facebook,.region-china .janrain-provider-icon-facebook{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/facebook.png)
+}
+.region-china .social-provider-icon.twitter,.region-china .janrain-provider-icon-twitter{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/twitter.png)
+}
+.region-china .social-provider-icon.myspace,.region-china .janrain-provider-icon-myspace{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/myspace.png)
+}
+.region-china .social-provider-icon.instagram,.region-china .janrain-provider-icon-instagram{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/instagram.png)
+}
+.region-china .social-provider-icon.disqus,.region-china .janrain-provider-icon-disqus{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/disqus.png)
+}
+.region-china .social-provider-icon.microsoftaccount,.region-china .janrain-provider-icon-microsoftaccount{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/microsoftaccount.png)
+}
+.region-china .social-provider-icon.live_id,.region-china .janrain-provider-icon-live_id{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/live_id.png)
+}
+.region-china .social-provider-icon.yahoo,.region-china .janrain-provider-icon-yahoo{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/yahoo.png)
+}
+.region-china .social-provider-icon.yahoo-oauth2,.region-china .janrain-provider-icon-yahoo-oauth2{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/yahoo-oauth2.png)
+}
+.region-china .social-provider-icon.netlog,.region-china .janrain-provider-icon-netlog{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/netlog.png)
+}
+.region-china .social-provider-icon.flickr,.region-china .janrain-provider-icon-flickr{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/flickr.png)
+}
+.region-china .social-provider-icon.blogger,.region-china .janrain-provider-icon-blogger{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/blogger.png)
+}
+.region-china .social-provider-icon.verisign,.region-china .janrain-provider-icon-verisign{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/verisign.png)
+}
+.region-china .social-provider-icon.wordpress,.region-china .janrain-provider-icon-wordpress{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/wordpress.png)
+}
+.region-china .social-provider-icon.hyves,.region-china .janrain-provider-icon-hyves{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/hyves.png)
+}
+.region-china .social-provider-icon.linkedin,.region-china .janrain-provider-icon-linkedin{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/linkedin.png)
+}
+.region-china .social-provider-icon.linkedin-oauth2,.region-china .janrain-provider-icon-linkedin-oauth2{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/linkedin-oauth2.png)
+}
+.region-china .social-provider-icon.paypal,.region-china .janrain-provider-icon-paypal{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/paypal.png)
+}
+.region-china .social-provider-icon.paypal_openidconnect,.region-china .janrain-provider-icon-paypal_openidconnect{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/paypal_openidconnect.png)
+}
+.region-china .social-provider-icon.salesforce,.region-china .janrain-provider-icon-salesforce{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/salesforce.png)
+}
+.region-china .social-provider-icon.orkut,.region-china .janrain-provider-icon-orkut{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/orkut.png)
+}
+.region-china .social-provider-icon.vzn,.region-china .janrain-provider-icon-vzn{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/vzn.png)
+}
+.region-china .social-provider-icon.tumblr,.region-china .janrain-provider-icon-tumblr{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/tumblr.png)
+}
+.region-china .social-provider-icon.foursquare,.region-china .janrain-provider-icon-foursquare{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/foursquare.png)
+}
+.region-china .social-provider-icon.sinaweibo,.region-china .janrain-provider-icon-sinaweibo{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/sinaweibo.png)
+}
+.region-china .social-provider-icon.renren,.region-china .janrain-provider-icon-renren{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/renren.png)
+}
+.region-china .social-provider-icon.tencentweibo,.region-china .janrain-provider-icon-tencentweibo{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/tencentweibo.png)
+}
+.region-china .social-provider-icon.soundcloud,.region-china .janrain-provider-icon-soundcloud{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/soundcloud.png)
+}
+.region-china .social-provider-icon.samltest,.region-china .janrain-provider-icon-samltest{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/samltest.png)
+}
+.region-china .social-provider-icon.lilly,.region-china .janrain-provider-icon-lilly{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/lilly.png)
+}
+.region-china .social-provider-icon.pinterest,.region-china .janrain-provider-icon-pinterest{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/pinterest.png)
+}
+.region-china .social-provider-icon.jnj,.region-china .janrain-provider-icon-jnj{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/jnj.png)
+}
+.region-china .social-provider-icon.qq,.region-china .janrain-provider-icon-qq{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/qq.png)
+}
+.region-china .social-provider-icon.media_id,.region-china .janrain-provider-icon-media_id{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/media_id.png)
+}
+.region-china .social-provider-icon.doximity,.region-china .janrain-provider-icon-doximity{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/doximity.png)
+}
+.region-china .social-provider-icon.medy,.region-china .janrain-provider-icon-medy{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/medy.png)
+}
+.region-china .social-provider-icon.wechat,.region-china .janrain-provider-icon-wechat{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/wechat.png)
+}
+.region-china .social-provider-icon.mcdonalds,.region-china .janrain-provider-icon-mcdonalds{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/mcdonalds.png)
+}
+.region-china .social-provider-icon.sanofi,.region-china .janrain-provider-icon-sanofi{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/sanofi.png)
+}
+.region-china .social-provider-icon.pg,.region-china .janrain-provider-icon-pg{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/pg.png)
+}
+.region-china .social-provider-icon.bdc,.region-china .janrain-provider-icon-bdc{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/bdc.png)
+}
+.region-china .social-provider-icon.microsoftonline,.region-china .janrain-provider-icon-microsoftonline{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/microsoftonline.png)
+}
+.region-china .social-provider-icon.m3medical,.region-china .janrain-provider-icon-m3medical{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/m3medical.png)
+}
+.region-china .social-provider-icon.torstar,.region-china .janrain-provider-icon-torstar{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/torstar.png)
+}
+.region-china .social-provider-icon.dollartree,.region-china .janrain-provider-icon-dollartree{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/dollartree.png)
+}
+.region-china .social-provider-icon.footlocker,.region-china .janrain-provider-icon-footlocker{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/footlocker.png)
+}
+.region-china .social-provider-icon.biogen,.region-china .janrain-provider-icon-biogen{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/biogen.png)
+}
+.region-china .social-provider-icon.apple,.region-china .janrain-provider-icon-apple{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/apple.png)
+}
+.region-china .social-provider-icon.line,.region-china .janrain-provider-icon-line{
+    background-image:url(https://janrain-quilt-static.cn.janrain.biz/HEAD/icons/janrain-providers/line.png)
+}
+.switch{
+    margin-bottom:10px
+}
+.switch label{
+    display:inline-block;
+    height:34px;
+    position:relative;
+    width:60px;
+    text-indent:70px;
+    white-space:nowrap
+}
+.switch input{
+    display:none
+}
+.slider{
+    background-color:#ccc;
+    cursor:pointer;
+    left:0;
+    position:absolute;
+    top:9px;
+    transition:.4s;
+    height:34px;
+    width:60px
+}
+.slider:before{
+    background-color:#fff;
+    bottom:4px;
+    content:"";
+    height:26px;
+    left:4px;
+    position:absolute;
+    transition:.4s;
+    width:26px
+}
+input:checked+.slider{
+    background-color:#66bb6a
+}
+input:checked+.slider:before{
+    transform:translateX(26px)
+}
+.slider.round{
+    border-radius:34px
+}
+.slider.round:before{
+    border-radius:50%
+}
+input[type=radio]{
+    width:25px
+}
+.capture_tip_validating,.capture_tip_error{
+    display:none
+}
+.capture_validating .capture_tip_validating{
+    display:unset
+}
+.capture_error input{
+    margin-bottom:7px;
+    border-color:#fa5151
+}
+.capture_error .capture_tip_error{
+    color:#fa5151;
+    font-size:14px;
+    display:block;
+    margin-bottom:7px
+}
+.capture_error .capture_tip_validating{
+    display:none
+}
+.janrain-capture-ui .capture_linkAccount{
+    display:none
+}
+.janrain-capture-ui .capture_linkAccounts ul{
+    list-style:none
+}
+.janrain-capture-ui .capture_provider .capture_remove{
+    position:absolute;
+    cursor:pointer;
+    left:17px;
+    bottom:7px
+}
+.janrain-capture-ui .capture_provider .capture_remove.janrain-icon-ex:before{
+    content:"Disconnect";
+    color:#5f80c5
+}
+.janrain-capture-ui .capture_provider_linked{
+    border:1px solid #f2f2f2;
+    padding:0;
+    position:relative;
+    display:flex;
+    margin:5px 0
+}
+.janrain-capture-ui .capture_provider_linked span[class^=janrain-provider-text]{
+    display:inline-block;
+    line-height:72px;
+    padding-left:20px;
+    border-left:1px solid #f2f2f2
+}
+.janrain-capture-ui .capture_provider_linked [class^=janrain-provider-icon]{
+    display:inline-block;
+    margin:10px 5px 10px 10px;
+    background-color:#fff;
+    height:39px;
+    width:39px;
+    background-size:39px;
+    border-radius:3px
+}
+.janrain-capture-ui .capture_provider_linked .linked-profile-image{
+    margin:10px 10px 10px 0;
+    max-height:39px;
+    max-width:39px;
+    display:inline-block
+}
+.janrain-capture-ui .switch .capture_tip{
+    font-weight:lighter;
+    margin-left:70px;
+    margin-top:-14px
+}
+.janrain-capture-ui .switch .capture_checkbox label{
+    padding-left:0;
+    margin-bottom:0
+}
+.janrain-capture-ui .capture_checkbox label{
+    margin-bottom:10px;
+    font-size:16px
+}
+.janrain-capture-ui .capture_checkbox .capture_input_checkbox{
+    top:10px;
+    width:25px
+}
+.janrain-capture-ui .capture_save_success,.janrain-capture-ui .capture_form_error{
+    font-size:14px;
+    display:block;
+    margin-bottom:7px;
+    margin-top:7px
+}
+.janrain-capture-ui .capture_form_error{
+    color:#fa5151
+}
+.janrain-capture-ui .capture_processing{
+    display:inline-block;
+    font-size:18px;
+    margin:0 10px
+}
+.profile-account-photo{
+    display:inline-block;
+    vertical-align:middle
+}
+.profile-account-photo img{
+    height:39px;
+    width:39px
+}
+#gizmo-debugger{
+    position:absolute;
+    top:0px;
+    right:0px;
+    background-color:#fff;
+    padding:20px;
+    border:solid #09c;
+    border-width:0 0 2px 2px;
+    border-style:outset;
+    box-shadow:1px 1px 5px 2px rgba(0,0,0,.1);
+    overflow:hidden
+}
+#gizmo-debugger.minimized{
+    height:20px;
+    padding:0 20px
+}
+#gizmo-debugger>div{
+    margin-top:20px
+}
+#gizmo-debugger label{
+    padding-right:20px
+}
+#gizmo-debugger-minimize-button{
+    position:absolute;
+    left:5px;
+    top:0;
+    text-decoration:none
+}
