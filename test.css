@@ -2,6 +2,10 @@
     height:80px;
     float:left;
 }
+#janrainCaptureWidget{
+    width:50%;
+    background-color:#898A8A;
+}
 #capture_signIn_ToTremfya{
     position:absolute;
     top:0px;
@@ -14,8 +18,8 @@
     top:60px;
 }
 button{
-    background-color:#5f80c5;
-    border:1px solid #5f80c5;
+    background-color:#898A8A;
+    border:1px solid #898A8A;
     border-radius:2px;
     cursor:pointer;
     color:#fff;
