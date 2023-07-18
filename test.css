@@ -17,6 +17,7 @@ body {
     bottom: 0px;
     right: 0px;
     left: 0px;
+    color:black;
 }
 #signIn {
     display: block;
@@ -31,9 +32,9 @@ body {
     border-radius: 25px;
 }
 #capture_signIn_ToTremfya{
-    position:static;
-    top:0px;
-    right:0px;
+    position:fixed;
+    top:2px;
+    right:2px;
 }
 #logo{
     position:absolute;
