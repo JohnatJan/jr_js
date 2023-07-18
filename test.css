@@ -1,9 +1,10 @@
 body {
     color: #4FADAA;
     background-color:lightgray;
+    margin:0px;
 }
 #header-container{
-    height:80px;
+    height:60px;
     float:left;
     background-color:white;
     border-bottom:1px solid gray;
@@ -38,7 +39,7 @@ body {
 }
 #logo{
     position:absolute;
-    height:60px;
+    height:20px;
     left:0px;
     top:60px;
 }
