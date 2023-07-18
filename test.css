@@ -1,9 +1,22 @@
+body {
+    color: #4FADAA;
+    background-color:lightgray;
+}
 #header-container{
     height:80px;
     float:left;
+    background-color:white;
+    border-bottom:1px solid gray;
 }
 #content-container{
     padding-top:200px;
+}
+.footer-container {
+    position: absolute;
+    float: left;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
 }
 #signIn {
     display: block;
@@ -16,7 +29,6 @@
     background-color:#4FADAA;
     padding: 10px;
     border-radius: 25px;
-
 }
 #capture_signIn_ToTremfya{
     position:static;
@@ -32,9 +44,11 @@
 button{
     background-color:#F7CE62;
     border:1px solid #F7CE62;
-    border-radius:2px;
+    border-radius:25px;
+    width:100%;
+    margin:auto;
     cursor:pointer;
-    color:#fff;
+    color:Black;
     padding:10px 15px;
     margin:0px;
     font-size:18px
