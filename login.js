@@ -5,7 +5,6 @@
     function isReady() { 
         janrain.ready = true; 
         janrain.events.onCaptureRenderComplete.addHandler(function(result) {
-            {
               loginScreen();
               const topHeader='<div class="top-wrapper first"><div class="top-left-section"><a href="#" class="info-saty">Important Safety Information</a><a href="#" class="full-info">Full Prescribing Information</a></div>' +
               '<div class="top-right-section"><a href="#" class="top-trimfya-link">Go to BRAND.com</a></div></div><div class="top-wrapper"><div class="logo-wrapper" id="tremfya"></div><div class="top-support-program"><div class="support-program">Patient Support Program</div><div class="need-help"><a href="">Need Help?</a></div></div></div>';
@@ -26,8 +25,6 @@
                 $("<a>").attr({class:"sign-up-button",type:"submit",href:"#",}).text("Sign Up").appendTo(".form-right-button-section");
                 
                 $("<div>").attr("class","tour-video").html('<a href="#" class="tour-video-section"><span>Watch a 90-second video tour</span></a>').appendTo(".form-right-button-section");
-            });
-        });
 
         janrain.capture.ui.start();
     };
