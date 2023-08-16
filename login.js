@@ -7,29 +7,11 @@
         janrain.events.onCaptureRenderComplete.addHandler(function(result) {
             {
               loginScreen();
-              const topHeader='<div class="top-wrapper first">
-              <div class="top-left-section"
-                ><a href="#" class="info-saty">Important Safety Information</a>
-                <a href="#" class="full-info"
-                  >Full Prescribing Information</a
-                ></div
-              >
-              <div class="top-right-section">
-                <a href="#" class="top-trimfya-link">Go to BRAND.com</a>
-              </div>
-            </div>
-            <div class="top-wrapper">
-              <div class="logo-wrapper" id="tremfya"></div>
-              <div class="top-support-program">
-                <div class="support-program">Patient Support Program</div>
-                <div class="need-help"><a href="">Need Help?</a></div>
-              </div>
-            </div>';
-                  $("#content-wrapper #header-container").prepend(topHeader);
-                  const siteFooter='<div class="login-footer-wrapper">
-                  <p>If you have any questions, please contact us at:</p>
-                  <p><span class="bold">877-CarePath</span> (877-227-3728)</p>
-                  <p> Monday - Friday, 8:00 AM - 8:00  PM ET</p></div>';
+              const topHeader='<div class="top-wrapper first"><div class="top-left-section"><a href="#" class="info-saty">Important Safety Information</a><a href="#" class="full-info">Full Prescribing Information</a></div>' +
+              '<div class="top-right-section"><a href="#" class="top-trimfya-link">Go to BRAND.com</a></div></div><div class="top-wrapper"><div class="logo-wrapper" id="tremfya"></div><div class="top-support-program"><div class="support-program">Patient Support Program</div><div class="need-help"><a href="">Need Help?</a></div></div></div>';
+                  
+              $("#content-wrapper #header-container").prepend(topHeader);
+                  const siteFooter='<div class="login-footer-wrapper"><p>If you have any questions, please contact us at:</p><p><span class="bold">877-CarePath</span> (877-227-3728)</p><p> Monday - Friday, 8:00 AM - 8:00  PM ET</p></div>';
                       
                 $("#content-wrapper #content-container").append(siteFooter);
                 const logo=$("#logo-wrapper #logo").attr("src");$("<img>").attr({src:logo,id:"logo",alt:"logo"}).appendTo(".top-wrapper #tremfya");
