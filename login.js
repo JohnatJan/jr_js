@@ -36,7 +36,19 @@
     } else {
       window.attachEvent('onload', isReady);
     }
-});
+})();
 
 
-function loginScreen(){$("#signIn .auth-screen .alternate-credentials").text("");$("#signIn .auth-screen .alternate-credentials").addClass("email-label").text("Email & Password");$("#capture_signIn_form_item_signInEmailAddress label").text("");$("#capture_signIn_form_item_signInEmailAddress label").text("Email");const passToogle='<div class="pass-toogle-icon" id="passwordToogle"></div>';$("#signIn #capture_signIn_form_item_currentPassword").append(passToogle);$(document).on("click","#passwordToogle",function(event){const passwordField=$("#signIn #capture_signIn_currentPassword");const fieldType=passwordField.attr("type");const type=fieldType==="password"?"text":"password";passwordField.attr("type",type);$("#passwordToogle").toggleClass("open-eye");});}
+function loginScreen(){
+    $("#signIn .auth-screen .alternate-credentials").text("");
+    $("#signIn .auth-screen .alternate-credentials").addClass("email-label").text("Email & Password");
+    $("#capture_signIn_form_item_signInEmailAddress label").text("");$("#capture_signIn_form_item_signInEmailAddress label").text("Email");
+    const passToogle='<div class="pass-toogle-icon" id="passwordToogle"></div>';$("#signIn #capture_signIn_form_item_currentPassword").append(passToogle);
+    $(document).on("click","#passwordToogle",function(event){
+        const passwordField=$("#signIn #capture_signIn_currentPassword");
+        const fieldType=passwordField.attr("type");
+        const type=fieldType==="password"?"text":"password";
+        passwordField.attr("type",type);
+        $("#passwordToogle").toggleClass("open-eye")
+    ;})
+;}
