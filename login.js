@@ -38,8 +38,10 @@
 function loginScreen(){
     $("#signIn .auth-screen .alternate-credentials").text("");
     $("#signIn .auth-screen .alternate-credentials").addClass("email-label").text("Email & Password");
-    $("#capture_signIn_form_item_signInEmailAddress label").text("");$("#capture_signIn_form_item_signInEmailAddress label").text("Email");
-    const passToogle='<div class="pass-toogle-icon" id="passwordToogle"></div>';$("#signIn #capture_signIn_form_item_currentPassword").append(passToogle);
+    $("#capture_signIn_form_item_signInEmailAddress label").text("");
+    $("#capture_signIn_form_item_signInEmailAddress label").text("Email");
+    const passToogle='<div class="pass-toogle-icon" id="passwordToogle"></div>';
+    $("#signIn #capture_signIn_form_item_currentPassword").append(passToogle);
     $(document).on("click","#passwordToogle",function(event){
         const passwordField=$("#signIn #capture_signIn_currentPassword");
         const fieldType=passwordField.attr("type");
@@ -49,13 +51,15 @@ function loginScreen(){
     ;})
 ;}
 function addHeader() {
-    const topHeader='<div class="top-wrapper first"><div class="top-left-section"><a href="#" class="info-saty">Important Safety Information</a><a href="#" class="full-info">Full Prescribing Information</a></div>' +
+    const topHeader='<div id="customHeader" class="top-wrapper first"><div class="top-left-section"><a href="#" class="info-saty">Important Safety Information</a><a href="#" class="full-info">Full Prescribing Information</a></div>' +
               '<div class="top-right-section"><a href="#" class="top-trimfya-link">Go to BRAND.com</a></div></div><div class="top-wrapper"><div class="logo-wrapper" id="tremfya"></div><div class="top-support-program"><div class="support-program">Patient Support Program</div><div class="need-help"><a href="">Need Help?</a></div></div></div>';
-                  
-    $("#content-wrapper #header-container").prepend(topHeader);
+    
+    if ($('#customHeader') == null)
+        $("#content-wrapper #header-container").prepend(topHeader);
 }
 function addFooter () {
-    const siteFooter='<div class="login-footer-wrapper"><p>If you have any questions, please contact us at:</p><p><span class="bold">877-CarePath</span> (877-227-3728)</p><p> Monday - Friday, 8:00 AM - 8:00  PM ET</p></div>';
-                      
-                $("#content-wrapper #content-container").append(siteFooter);
+    const siteFooter='<div id="customFooter" class="login-footer-wrapper"><p>If you have any questions, please contact us at:</p><p><span class="bold">877-CarePath</span> (877-227-3728)</p><p> Monday - Friday, 8:00 AM - 8:00  PM ET</p></div>';
+
+    if ($('#customFooter') == null)
+        $("#content-wrapper #content-container").append(siteFooter);
 }
