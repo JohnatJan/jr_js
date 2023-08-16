@@ -21,7 +21,7 @@
                 $("<div>").attr("class","form-right-section").appendTo("#janrainCaptureWidget");
                 $("<h3>").attr("class","screen-heading").text("Welcome to Janssen CarePath").appendTo(".form-right-section");
                 $("<div>").attr("class","form-text").text("Sign into your account to verify your insurance coverage or find affordability options. You can also learn about your medication and find other resources that will help you with your treatment journey.").appendTo(".form-right-section");
-                $("<div> <>").attr("class","form-not-account").text('Don't have an account?').appendTo(".form-right-section");
+                $("<div>").attr("class","form-not-account").text("Don't have an account?").appendTo(".form-right-section");
                 $("<div>").attr("class","form-right-button-section").appendTo(".form-right-section");
                 $("<a>").attr({class:"sign-up-button",type:"submit",href:"#",}).text("Sign Up").appendTo(".form-right-button-section");
                 
