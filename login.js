@@ -29,6 +29,7 @@
 
         janrain.capture.ui.start();
     });
+    }
     
     if (document.addEventListener) {
       document.addEventListener("DOMContentLoaded", isReady, false);
