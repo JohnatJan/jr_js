@@ -8,21 +8,7 @@
                 addHeader();
                 loginScreen();
                 addFooter();
-                
-                const logo=$("#logo-wrapper #logo").attr("src");
-                $("<img>").attr({src:logo,id:"logo",alt:"logo"}).appendTo(".top-wrapper #tremfya");
-                $(".additional-actions-container .content-wrapper ").hide();
-                $("<div>").attr({class:"halthcare-provide"}).html("HealthCare Provider ?<a> Go To Provider Portal</a>").appendTo(".footer-container .content-wrapper");
-                $(".additional-actions-container .content-wrapper .help-text, .footer-container .content-wrapper .help-link").hide();
-                $("<div>").attr("class","form-right-section").appendTo("#janrainCaptureWidget");
-                $("<h3>").attr("class","screen-heading").text("Welcome to Janssen CarePath").appendTo(".form-right-section");
-                $("<div>").attr("class","form-text").text("Sign into your account to verify your insurance coverage or find affordability options. You can also learn about your medication and find other resources that will help you with your treatment journey.").appendTo(".form-right-section");
-                $("<div>").attr("class","form-not-account").text("Don't have an account?").appendTo(".form-right-section");
-                $("<div>").attr("class","form-right-button-section").appendTo(".form-right-section");
-                $("<a>").attr({class:"sign-up-button",type:"submit",href:"#",}).text("Sign Up").appendTo(".form-right-button-section");
-                
-                $("<div>").attr("class","tour-video").html('<a href="#" class="tour-video-section"><span>Watch a 90-second video tour</span></a>').appendTo(".form-right-button-section");
-
+                addCustomSidebar();
             janrain.capture.ui.start();
         });
     }
@@ -62,4 +48,23 @@ function addFooter () {
 
     if ($('#customFooter') == null)
         $("#content-wrapper #content-container").append(siteFooter);
+}
+function addCustomSidebar() {
+
+        if ($('#hcpFooter') == null) {
+            const logo=$("#logo-wrapper #logo").attr("src");
+            $("<img>").attr({src:logo,id:"logo",alt:"logo"}).appendTo(".top-wrapper #tremfya");
+            $(".additional-actions-container .content-wrapper ").hide();
+            $("<div>").attr({class:"healthcare-provide",id:"hcpFooter"}).html("HealthCare Provider ?<a> Go To Provider Portal</a>").appendTo(".footer-container .content-wrapper");
+            $(".additional-actions-container .content-wrapper .help-text, .footer-container .content-wrapper .help-link").hide();
+            $("<div>").attr("class","form-right-section").appendTo("#janrainCaptureWidget");
+            $("<h3>").attr("class","screen-heading").text("Welcome to Janssen CarePath").appendTo(".form-right-section");
+            $("<div>").attr("class","form-text").text("Sign into your account to verify your insurance coverage or find affordability options. You can also learn about your medication and find other resources that will help you with your treatment journey.").appendTo(".form-right-section");
+            $("<div>").attr("class","form-not-account").text("Don't have an account?").appendTo(".form-right-section");
+            $("<div>").attr("class","form-right-button-section").appendTo(".form-right-section");
+            $("<a>").attr({class:"sign-up-button",type:"submit",href:"#",}).text("Sign Up").appendTo(".form-right-button-section");
+            
+            $("<div>").attr("class","tour-video").html('<a href="#" class="tour-video-section"><span>Watch a 90-second video tour</span></a>').appendTo(".form-right-button-section");
+        }
+    
 }
