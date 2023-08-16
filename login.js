@@ -10,7 +10,7 @@
               '<div class="top-right-section"><a href="#" class="top-trimfya-link">Go to BRAND.com</a></div></div><div class="top-wrapper"><div class="logo-wrapper" id="tremfya"></div><div class="top-support-program"><div class="support-program">Patient Support Program</div><div class="need-help"><a href="">Need Help?</a></div></div></div>';
                   
               $("#content-wrapper #header-container").prepend(topHeader);
-                  const siteFooter='<div class="login-footer-wrapper"><p>If you have any questions, please contact us at:</p><p><span class="bold">877-CarePath</span> (877-227-3728)</p><p> Monday - Friday, 8:00 AM - 8:00  PM ET</p></div>';
+                const siteFooter='<div class="login-footer-wrapper"><p>If you have any questions, please contact us at:</p><p><span class="bold">877-CarePath</span> (877-227-3728)</p><p> Monday - Friday, 8:00 AM - 8:00  PM ET</p></div>';
                       
                 $("#content-wrapper #content-container").append(siteFooter);
                 const logo=$("#logo-wrapper #logo").attr("src");
@@ -27,8 +27,8 @@
                 
                 $("<div>").attr("class","tour-video").html('<a href="#" class="tour-video-section"><span>Watch a 90-second video tour</span></a>').appendTo(".form-right-button-section");
 
-        janrain.capture.ui.start();
-    });
+            janrain.capture.ui.start();
+        });
     }
     
     if (document.addEventListener) {
@@ -36,7 +36,7 @@
     } else {
       window.attachEvent('onload', isReady);
     }
-})();
+});
 
 
 function loginScreen(){$("#signIn .auth-screen .alternate-credentials").text("");$("#signIn .auth-screen .alternate-credentials").addClass("email-label").text("Email & Password");$("#capture_signIn_form_item_signInEmailAddress label").text("");$("#capture_signIn_form_item_signInEmailAddress label").text("Email");const passToogle='<div class="pass-toogle-icon" id="passwordToogle"></div>';$("#signIn #capture_signIn_form_item_currentPassword").append(passToogle);$(document).on("click","#passwordToogle",function(event){const passwordField=$("#signIn #capture_signIn_currentPassword");const fieldType=passwordField.attr("type");const type=fieldType==="password"?"text":"password";passwordField.attr("type",type);$("#passwordToogle").toggleClass("open-eye");});}
