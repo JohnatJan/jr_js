@@ -13,7 +13,8 @@
                   const siteFooter='<div class="login-footer-wrapper"><p>If you have any questions, please contact us at:</p><p><span class="bold">877-CarePath</span> (877-227-3728)</p><p> Monday - Friday, 8:00 AM - 8:00  PM ET</p></div>';
                       
                 $("#content-wrapper #content-container").append(siteFooter);
-                const logo=$("#logo-wrapper #logo").attr("src");$("<img>").attr({src:logo,id:"logo",alt:"logo"}).appendTo(".top-wrapper #tremfya");
+                const logo=$("#logo-wrapper #logo").attr("src");
+                $("<img>").attr({src:logo,id:"logo",alt:"logo"}).appendTo(".top-wrapper #tremfya");
                 $(".additional-actions-container .content-wrapper ").hide();
                 $("<div>").attr({class:"halthcare-provide"}).html("HealthCare Provider ?<a> Go To Provider Portal</a>").appendTo(".footer-container .content-wrapper");
                 $(".additional-actions-container .content-wrapper .help-text, .footer-container .content-wrapper .help-link").hide();
@@ -27,7 +28,7 @@
                 $("<div>").attr("class","tour-video").html('<a href="#" class="tour-video-section"><span>Watch a 90-second video tour</span></a>').appendTo(".form-right-button-section");
 
         janrain.capture.ui.start();
-    };
+    });
     
     if (document.addEventListener) {
       document.addEventListener("DOMContentLoaded", isReady, false);
