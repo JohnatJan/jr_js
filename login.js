@@ -9,7 +9,7 @@
                 loginScreen();
                 addFooter();
                 addCustomSidebar();
-            janrain.capture.ui.start();
+            //janrain.capture.ui.start();
         });
     }
     
