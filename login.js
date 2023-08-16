@@ -9,7 +9,9 @@
                 loginScreen();
                 addFooter();
                 addCustomSidebar();
-            //janrain.capture.ui.start();
+            $(".additional-actions-container").html("");
+            $('#capture_signIn_signInForm_errorMessages').appendTo(".additional-actions-container");
+
         });
     }
     
