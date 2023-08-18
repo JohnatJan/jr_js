@@ -11,7 +11,7 @@
                 addCustomSidebar();
             $(".additional-actions-container").html("");
             $('#capture_signIn_signInForm_errorMessages').appendTo(".additional-actions-container");
-
+            $("<div>").attr({class:"healthcare-provide",id:"hcpFooter"}).html("HealthCare Provider ?<a> Go To Provider Portal</a>").appendTo(".footer-container .content-wrapper");
         });
     }
     
@@ -57,7 +57,6 @@ function addCustomSidebar() {
             const logo=$("#logo-wrapper #logo").attr("src");
             $("<img>").attr({src:logo,id:"logo",alt:"logo"}).appendTo(".top-wrapper #tremfya");
             $(".additional-actions-container .content-wrapper ").hide();
-            $("<div>").attr({class:"healthcare-provide",id:"hcpFooter"}).html("HealthCare Provider ?<a> Go To Provider Portal</a>").appendTo(".footer-container .content-wrapper");
             $(".additional-actions-container .content-wrapper .help-text, .footer-container .content-wrapper .help-link").hide();
             $("<div>").attr("class","form-right-section").appendTo("#janrainCaptureWidget");
             $("<h3>").attr("class","screen-heading").text("Welcome to Janssen CarePath").appendTo(".form-right-section");
