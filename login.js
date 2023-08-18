@@ -12,7 +12,7 @@
             $(".additional-actions-container").html("");
             $('#capture_signIn_signInForm_errorMessages').appendTo(".additional-actions-container");
             $("<div>").attr({class:"healthcare-provide",id:"hcpFooter"}).html("HealthCare Provider ?<a> Go To Provider Portal</a>").appendTo(".footer-container .content-wrapper");
-            $(".additional-actions-container .content-wrapper .help-text").hide();
+            $('.footer-container .content-wrapper .help-link').hide();
         });
     }
     
