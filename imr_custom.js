@@ -5,6 +5,7 @@
     function isReady() { 
         janrain.ready = true; 
         janrain.events.onCaptureRenderComplete.addHandler(function(result) {
+                console.log(janrain.gizmo.screenToRender);
                 if(janrain.gizmo.screenToRender == 'verifyEmailSuccess') 
                 {
                     //Show set password controls
