@@ -5,8 +5,9 @@
     function isReady() { 
         janrain.ready = true; 
         janrain.events.onCaptureRenderComplete.addHandler(function(result) {
-                if(janrain.gizmo.screenToRender == 'resetPassword' || janrain.gizmo.screenToRender == 'verifyEmail') 
-                { 
+                if(janrain.gizmo.screenToRender == 'verifyEmailSuccess') 
+                {
+                    //Show set password controls
                     const urlParams = new URLSearchParams(window.location.search);
                     const emailAddress = urlParams.get('login_hint');
                     document.getElementsByName("signInEmailAddress")[0].value = emailAddress; 
