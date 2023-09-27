@@ -1,0 +1,1689 @@
+@font-face {
+  font-family: Karbon;
+  src: url("./font/Karbon-Regular/Karbon-Regular.eot?#iefix") format("embedded-opentype");
+  src: url("./font/Karbon-Regular/Karbon-Regular.woff") format("woff"), url("./font/Karbon-Regular/Karbon-Regular.ttf") format("truetype"), url("font/Karbon-Regular/Karbon-Regular.svg") format("svg");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: Karbon-bold;
+  src: url("./font/Karbon-Semibold/Karbon-Semibold.eot?#iefix") format("embedded-opentype");
+  src: url("./font/Karbon-Semibold/Karbon-Semibold.woff") format("woff"), url("./font/Karbon-Semibold/Karbon-Semibold.ttf") format("truetype"), url("./font/Karbon-Semibold/Karbon-Semibold.svg#Karbon-Semibold") format("svg");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: Gilroy;
+  src: url("./font/Gilroy-Regular/Gilroy-Regular.eot?#iefix") format("embedded-opentype");
+  src: url("./font/Gilroy-Regular/Gilroy-Regular.woff") format("woff"), url("./font/Gilroy-Regular/Gilroy-Regular.ttf") format("truetype"), url("font/Gilroy-Regular/Gilroy-Regular.svg") format("svg");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: Gilroy-bold;
+  src: url("./font/Gilroy-SemiBold/Gilroy-SemiBold.eot?#iefix") format("embedded-opentype");
+  src: url("./font/Gilroy-SemiBold/Gilroy-SemiBold.woff") format("woff"), url("./font/Gilroy-SemiBold/Gilroy-SemiBold.ttf") format("truetype"), url("./font/Gilroy-SemiBold/Gilroy-SemiBold.svg#Gilroy-SemiBold") format("svg");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+:root {
+  --purple-cool: #AF69EE
+  --cyan-color: #00b0ab;
+  --yellow-F7CE62: #f7ce62;
+  --gray-D2D3D4: #d2d3d4;
+  --white-FFFFFF: #ffffff;
+  --gray-dark-666E70: #666e70;
+  --yellow-FFE600: #FFE600;
+  --black-0000000: #000000;
+  --dark-gray-333333: #333333;
+  --light-gray-F0F0F1: #F0F0F1;
+  --light-gray-3E4548:#3E4548
+  --dark-gray-18191A: #18191a;
+  --gray-light-F5F5F5: #f5f5f5;
+  --red-color: #e74040;
+  --teal-00CCC0: #00CCC0;
+}
+
+/*---------------Media Query-----*/
+/*-----------End Media Query-----------*/
+/*--------Button------*/
+.button, #main-container #content-container #janrainCaptureWidget .form-right-section .form-right-button-section .sign-up-button, #main-container #content-container #janrainCaptureWidget #signIn .form-action-buttons .forgot-pass-cancel, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .forgot-pass-cancel, #main-container #content-container #janrainCaptureWidget #signIn .form-action-buttons .reset-pass-button, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .reset-pass-button, #main-container #content-container #janrainCaptureWidget #signIn .form-action-buttons .sign-in-button, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .sign-in-button, #main-container #content-container #janrainCaptureWidget #signIn .form-action-buttons .capture_btn.capture_processing, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .capture_btn.capture_processing {
+  font-family: Gilroy, Arial, Helvetica, sans-serif;
+  padding: 19px 20px;
+  color: var(--purple-cool);
+  background-color: var(--yellow-FFE600);
+  font-size: 16px;
+  font-weight: 600;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: none;
+  border-radius: 40px;
+  box-sizing: border-box;
+  line-height: 22px;
+  cursor: pointer;
+}
+.button:focus-visible, #main-container #content-container #janrainCaptureWidget .form-right-section .form-right-button-section .sign-up-button:focus-visible, #main-container #content-container #janrainCaptureWidget #signIn .form-action-buttons .forgot-pass-cancel:focus-visible, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .forgot-pass-cancel:focus-visible, #main-container #content-container #janrainCaptureWidget #signIn .form-action-buttons .reset-pass-button:focus-visible, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .reset-pass-button:focus-visible, #main-container #content-container #janrainCaptureWidget #signIn .form-action-buttons .sign-in-button:focus-visible, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .sign-in-button:focus-visible, #main-container #content-container #janrainCaptureWidget #signIn .form-action-buttons .capture_btn.capture_processing:focus-visible, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .capture_btn.capture_processing:focus-visible {
+  outline: none;
+}
+@media (max-width: 767px) {
+  .button, #main-container #content-container #janrainCaptureWidget .form-right-section .form-right-button-section .sign-up-button, #main-container #content-container #janrainCaptureWidget #signIn .form-action-buttons .forgot-pass-cancel, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .forgot-pass-cancel, #main-container #content-container #janrainCaptureWidget #signIn .form-action-buttons .reset-pass-button, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .reset-pass-button, #main-container #content-container #janrainCaptureWidget #signIn .form-action-buttons .sign-in-button, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .sign-in-button, #main-container #content-container #janrainCaptureWidget #signIn .form-action-buttons .capture_btn.capture_processing, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .capture_btn.capture_processing {
+    font-size: 14px;
+    padding: 15px 20px;
+    line-height: 18px;
+  }
+}
+.button:hover, #main-container #content-container #janrainCaptureWidget .form-right-section .form-right-button-section .sign-up-button:hover, #main-container #content-container #janrainCaptureWidget #signIn .form-action-buttons .forgot-pass-cancel:hover, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .forgot-pass-cancel:hover, #main-container #content-container #janrainCaptureWidget #signIn .form-action-buttons .reset-pass-button:hover, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .reset-pass-button:hover, #main-container #content-container #janrainCaptureWidget #signIn .form-action-buttons .sign-in-button:hover, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .sign-in-button:hover, #main-container #content-container #janrainCaptureWidget #signIn .form-action-buttons .capture_btn.capture_processing:hover, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .capture_btn.capture_processing:hover {
+  opacity: 0.9;
+  outline: 3px solid var(--purple-cool);
+}
+
+body {
+  font-family: Gilroy, Arial, Helvetica, sans-serif;
+  padding: 0 0;
+  margin: 0 0;
+  background: linear-gradient(0deg, rgba(0, 130, 153, 0.05) 0%, rgba(0, 130, 153, 0.05) 100%), #FFF;
+}
+body .gray-bg {
+  justify-content: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  display: flex;
+}
+
+#main-container #header-container {
+  background-color: var(--white-FFFFFF);
+  font-family: Karbon, Arial, Helvetica, sans-serif;
+}
+#main-container #header-container #logo-wrapper #logo {
+  display: none;
+}
+#main-container #header-container .top-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 38px 15px;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  #main-container #header-container .top-wrapper.first {
+    padding: 9.5px 18px 7.5px 14px;
+    border-bottom: 1px solid rgba(102, 109, 112, 0.1);
+  }
+}
+@media (max-width: 767px) {
+  #main-container #header-container .top-wrapper {
+    padding: 14px 18px 12px 5px;
+  }
+}
+#main-container #header-container .top-wrapper .logo-wrapper #logo {
+  height: 50px;
+}
+@media (max-width: 767px) {
+  #main-container #header-container .top-wrapper .logo-wrapper #logo {
+    height: 30px;
+  }
+}
+#main-container #header-container .top-wrapper .top-left-section {
+  gap: 40px;
+  display: flex;
+}
+@media (max-width: 767px) {
+  #main-container #header-container .top-wrapper .top-left-section {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+#main-container #header-container .top-wrapper .top-left-section .info-saty,
+#main-container #header-container .top-wrapper .top-left-section .full-info {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  color: var(--gray-dark-666E70);
+  text-decoration: none;
+}
+#main-container #header-container .top-wrapper .top-left-section .info-saty:hover,
+#main-container #header-container .top-wrapper .top-left-section .full-info:hover {
+  text-decoration: underline;
+}
+@media (max-width: 767px) {
+  #main-container #header-container .top-wrapper .top-left-section .info-saty,
+  #main-container #header-container .top-wrapper .top-left-section .full-info {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 15px;
+  }
+}
+@media (max-width: 767px) {
+  #main-container #header-container .top-wrapper .top-right-section {
+    display: none;
+  }
+}
+#main-container #header-container .top-wrapper .top-right-section .top-trimfya-link {
+  font-family: Karbon-bold;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  text-decoration: none;
+  color: var(--purple-cool);
+  display: flex;
+  align-items: center;
+}
+#main-container #header-container .top-wrapper .top-right-section .top-trimfya-link:hover {
+  text-decoration: underline;
+}
+#main-container #header-container .top-wrapper .top-right-section .top-trimfya-link::before {
+  content: "";
+  background-image: url("./img/left-arrow.svg");
+  display: inline-block;
+  width: 7px;
+  height: 12px;
+  margin-right: 7px;
+}
+#main-container #header-container .top-wrapper .top-right-section:nth-child(2) {
+  padding-top: 0px;
+}
+#main-container #header-container .top-support-program {
+  display: flex;
+  gap: 135px;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  #main-container #header-container .top-support-program {
+    gap: 18px;
+  }
+}
+#main-container #header-container .top-support-program .support-program {
+  font-family: Karbon-bold;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--purple-cool);
+}
+@media (max-width: 767px) {
+  #main-container #header-container .top-support-program .support-program {
+    font-size: 13px;
+  }
+}
+#main-container #header-container .top-support-program .need-help a {
+  font-family: Karbon-bold;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  color: var(--gray-dark-666E70);
+  text-decoration: none;
+  position: relative;
+}
+#main-container #header-container .top-support-program .need-help a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 767px) {
+  #main-container #header-container .top-support-program .need-help a {
+    font-size: 13px;
+    font-weight: 700;
+    top: -1px;
+    text-decoration: none !important;
+  }
+}
+#main-container #content-container {
+  background: linear-gradient(0deg, rgba(0, 130, 153, 0.05) 0%, rgba(0, 130, 153, 0.05) 100%), #FFF;
+  padding-top: 135px;
+}
+@media (max-width: 767px) {
+  #main-container #content-container {
+    padding-top: 22px;
+  }
+}
+#main-container #content-container #janrainCaptureWidget {
+  background-color: var(--white-FFFFFF);
+  outline: 10px solid var(--teal-00CCC0);
+  display: flex;
+  justify-content: space-between;
+  max-width: 920px;
+  margin: auto;
+  border-radius: 10px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+@media (max-width: 767px) {
+  #main-container #content-container #janrainCaptureWidget {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    display: grid;
+    outline: 6px solid var(--teal-00CCC0);
+    border-radius: 15px;
+    max-width: 317px;
+    padding: 0;
+  }
+}
+#main-container #content-container #janrainCaptureWidget .additional-actions-container #capture_signIn_signInForm_errorMessages .capture_form_error {
+  position: absolute;
+  top: auto;
+  bottom: 154px;
+  font-size: 14px;
+  line-height: 20px;
+  min-height: 26px;
+  display: flex;
+  align-items: center;
+  left: 5px;
+}
+@media (max-width: 767px) {
+  #main-container #content-container #janrainCaptureWidget .additional-actions-container #capture_signIn_signInForm_errorMessages .capture_form_error {
+    bottom: 137px;
+  }
+}
+#main-container #content-container #janrainCaptureWidget .content-wrapper {
+  position: relative;
+}
+@media (max-width: 767px) {
+  #main-container #content-container #janrainCaptureWidget {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+}
+#main-container #content-container #janrainCaptureWidget #initialLoadScreen {
+  display: none;
+}
+#main-container #content-container #janrainCaptureWidget #signIn, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest {
+  display: inline-block;
+  background-color: var(--white-FFFFFF);
+  padding: 28px 28px 36px 25px;
+  max-width: 380px;
+  flex-grow: 1;
+}
+#main-container #content-container #janrainCaptureWidget #signIn #capture_signIn_signInForm_errorMessages, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest #capture_signIn_signInForm_errorMessages {
+  color: var(--red-color);
+  position: relative;
+  top: 11px;
+}
+@media (max-width: 767px) {
+  #main-container #content-container #janrainCaptureWidget #signIn, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest {
+    padding: 24px 16px 0;
+  }
+}
+#main-container #content-container #janrainCaptureWidget #signIn .auth-screen hr, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .auth-screen hr {
+  display: none;
+}
+#main-container #content-container #janrainCaptureWidget #signIn .auth-screen .capture_tip_validating, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .auth-screen .capture_tip_validating {
+  display: none;
+}
+#main-container #content-container #janrainCaptureWidget #signIn .auth-screen #capture_signIn_ToTremfya,
+#main-container #content-container #janrainCaptureWidget #signIn .auth-screen #capture_signIn_linktoISI-Tremfya, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .auth-screen #capture_signIn_ToTremfya,
+#main-container #content-container #janrainCaptureWidget #resetPasswordRequest .auth-screen #capture_signIn_linktoISI-Tremfya {
+  display: none;
+}
+#main-container #content-container #janrainCaptureWidget #signIn .screen-heading, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .screen-heading {
+  color: var(--purple-cool);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  margin: 0 0;
+  line-height: 28px;
+}
+@media (max-width: 767px) {
+  #main-container #content-container #janrainCaptureWidget #signIn .screen-heading, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .screen-heading {
+    font-size: 21px;
+    line-height: 26px;
+    letter-spacing: -0.63px;
+  }
+}
+#main-container #content-container #janrainCaptureWidget #signIn .social-signin ul, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .social-signin ul {
+  margin: 0 0;
+}
+#main-container #content-container #janrainCaptureWidget #signIn .screen-description, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .screen-description {
+  margin: 0 0;
+}
+#main-container #content-container #janrainCaptureWidget #signIn .alternate-credentials, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .alternate-credentials {
+  color: var(--white-FFFFFF);
+  background-color: var(--cyan-color);
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 800;
+  position: relative;
+  display: none;
+}
+#main-container #content-container #janrainCaptureWidget #signIn .alternate-credentials.email-label, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .alternate-credentials.email-label {
+  border-radius: 20px;
+}
+#main-container #content-container #janrainCaptureWidget #signIn .alternate-credentials::after, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .alternate-credentials::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid var(--cyan-color);
+  position: absolute;
+  left: calc(50% - 6px);
+  bottom: -10px;
+}
+@media (max-width: 767px) {
+  #main-container #content-container #janrainCaptureWidget #signIn .alternate-credentials::after, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .alternate-credentials::after {
+    bottom: -10px;
+  }
+}
+@media (max-width: 767px) {
+  #main-container #content-container #janrainCaptureWidget #signIn .alternate-credentials, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .alternate-credentials {
+    font-size: 13px;
+    font-weight: 700;
+    padding: 8px 20px;
+  }
+}
+#main-container #content-container #janrainCaptureWidget #signIn .capture_form_item, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .capture_form_item {
+  margin-top: 23px;
+  border: 1px solid rgba(0, 130, 153, 0.3);
+  height: 58px;
+  border-radius: 10px;
+  position: relative;
+  padding: 0 0;
+  margin-bottom: 0;
+}
+#main-container #content-container #janrainCaptureWidget #signIn .capture_form_item:hover, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .capture_form_item:hover {
+  outline: 1px solid var(--purple-cool);
+}
+#main-container #content-container #janrainCaptureWidget #signIn .capture_form_item.capture_error, #main-container #content-container #janrainCaptureWidget #signIn .capture_form_item.error, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .capture_form_item.capture_error, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .capture_form_item.error {
+  border: 1px solid var(--red-color);
+  margin-bottom: 42px;
+}
+@media (max-width: 767px) {
+  #main-container #content-container #janrainCaptureWidget #signIn .capture_form_item.capture_error, #main-container #content-container #janrainCaptureWidget #signIn .capture_form_item.error, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .capture_form_item.capture_error, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .capture_form_item.error {
+    margin-bottom: 40px;
+  }
+}
+#main-container #content-container #janrainCaptureWidget #signIn .capture_form_item.error.capture_validated, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .capture_form_item.error.capture_validated {
+  border: 1px solid var(--gray-D2D3D4) !important;
+  margin-bottom: 0 !important;
+}
+#main-container #content-container #janrainCaptureWidget #signIn .capture_form_item .capture_signIn_signInForm_errorMessages, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .capture_form_item .capture_signIn_signInForm_errorMessages {
+  position: relative;
+  top: 12px;
+  color: var(--red-color);
+}
+#main-container #content-container #janrainCaptureWidget #signIn .capture_form_item.capture_password, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .capture_form_item.capture_password {
+  margin: 16px 0 0;
+}
+@media (max-width: 767px) {
+  #main-container #content-container #janrainCaptureWidget #signIn .capture_form_item.capture_password, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .capture_form_item.capture_password {
+    margin-bottom: 25px;
+  }
+}
+#main-container #content-container #janrainCaptureWidget #signIn .capture_form_item.capture_password.capture_error, #main-container #content-container #janrainCaptureWidget #signIn .capture_form_item.capture_password.error, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .capture_form_item.capture_password.capture_error, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .capture_form_item.capture_password.error {
+  margin-bottom: 48px;
+}
+@media (max-width: 767px) {
+  #main-container #content-container #janrainCaptureWidget #signIn .capture_form_item, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .capture_form_item {
+    height: 56px;
+    margin-top: 29px;
+    border-radius: 8px;
+  }
+}
+#main-container #content-container #janrainCaptureWidget #signIn .capture_form_item label, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .capture_form_item label {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--purple-cool);
+  display: block;
+  padding: 9px 20px 0px 20px;
+}
+#main-container #content-container #janrainCaptureWidget #signIn .capture_form_item label .required-field, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .capture_form_item label .required-field {
+  display: none;
+}
+#main-container #content-container #janrainCaptureWidget #signIn .capture_form_item label::after, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .capture_form_item label::after {
+  color: var(--red-color);
+  font-size: 18px;
+  padding-left: 3px;
+  content: "*";
+}
+@media (max-width: 767px) {
+  #main-container #content-container #janrainCaptureWidget #signIn .capture_form_item label, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .capture_form_item label {
+    font-size: 14px;
+    padding: 8px 16px 0px;
+    line-height: 18px;
+  }
+}
+#main-container #content-container #janrainCaptureWidget #signIn .capture_form_item input, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .capture_form_item input {
+  padding: 0px 20px;
+  height: 20px;
+  border: 0px solid transparent;
+  color: var(--purple-cool);
+  width: 100%;
+  box-sizing: border-box;
+  background-color: transparent;
+  font-size: 16px;
+  font-family: Gilroy, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+@media (max-width: 767px) {
+  #main-container #content-container #janrainCaptureWidget #signIn .capture_form_item input, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .capture_form_item input {
+    font-size: 14px;
+    padding: 0px 15px;
+  }
+}
+#main-container #content-container #janrainCaptureWidget #signIn .capture_form_item input::-ms-reveal, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .capture_form_item input::-ms-reveal {
+  display: none;
+}
+#main-container #content-container #janrainCaptureWidget #signIn .capture_form_item input::-ms-clear, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .capture_form_item input::-ms-clear {
+  display: none;
+}
+#main-container #content-container #janrainCaptureWidget #signIn .capture_form_item input:focus, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .capture_form_item input:focus {
+  border: 1px solid transparent;
+  outline: none;
+  background-color: transparent;
+}
+#main-container #content-container #janrainCaptureWidget #signIn .capture_form_item input:-webkit-autofill, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .capture_form_item input:-webkit-autofill {
+  background-color: transparent;
+}
+#main-container #content-container #janrainCaptureWidget #signIn .capture_form_item input:autofill, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .capture_form_item input:autofill {
+  background-color: transparent;
+}
+#main-container #content-container #janrainCaptureWidget #signIn .capture_form_item input:-webkit-autofill, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .capture_form_item input:-webkit-autofill {
+  background-color: transparent;
+}
+#main-container #content-container #janrainCaptureWidget #signIn .capture_form_item input:-webkit-autofill:focus, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .capture_form_item input:-webkit-autofill:focus {
+  background-color: transparent;
+}
+#main-container #content-container #janrainCaptureWidget #signIn .capture_form_item input:active, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .capture_form_item input:active {
+  background-color: transparent;
+}
+#main-container #content-container #janrainCaptureWidget #signIn .capture_form_item input::-webkit-input-placeholder, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .capture_form_item input::-webkit-input-placeholder {
+  opacity: 0;
+}
+#main-container #content-container #janrainCaptureWidget #signIn .capture_form_item .pass-toogle-icon, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .capture_form_item .pass-toogle-icon {
+  position: absolute;
+  bottom: 13px;
+  right: 10px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: 1px -4px;
+  height: 32px;
+  background-image: url(./img/eye-open.svg);
+  display: inline-block;
+  width: 30px;
+  background-size: cover;
+}
+@media (max-width: 767px) {
+  #main-container #content-container #janrainCaptureWidget #signIn .capture_form_item .pass-toogle-icon, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .capture_form_item .pass-toogle-icon {
+    height: 34px;
+    bottom: 11px;
+  }
+}
+#main-container #content-container #janrainCaptureWidget #signIn .capture_form_item .pass-toogle-icon.open-eye, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .capture_form_item .pass-toogle-icon.open-eye {
+  background-position: 1px -4px;
+  background-image: url(./img/eye-close.svg);
+  background-size: 94%;
+}
+#main-container #content-container #janrainCaptureWidget #signIn .capture_form_item .capture_tip_error, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .capture_form_item .capture_tip_error {
+  font-size: 14px;
+  font-style: normal;
+  color: var(--red-color);
+  padding: 22px 2px 5px 0px;
+}
+@media (max-width: 767px) {
+  #main-container #content-container #janrainCaptureWidget #signIn .capture_form_item .capture_tip_error, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .capture_form_item .capture_tip_error {
+    padding: 18px 2px 5px 0px;
+  }
+}
+#main-container #content-container #janrainCaptureWidget #signIn .form-action-buttons, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons {
+  position: relative;
+}
+#main-container #content-container #janrainCaptureWidget #signIn .form-action-buttons .remember-wrapper, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .remember-wrapper {
+  display: flex;
+  top: 23px;
+  position: absolute;
+  align-items: center;
+  gap: 15px;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--purple-cool);
+  font-weight: 400;
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  #main-container #content-container #janrainCaptureWidget #signIn .form-action-buttons .remember-wrapper, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .remember-wrapper {
+    gap: 12px;
+    font-size: 14px;
+    line-height: 18px;
+    top: 0;
+  }
+}
+#main-container #content-container #janrainCaptureWidget #signIn .form-action-buttons .remember-wrapper .checkbox, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .remember-wrapper .checkbox {
+  position: absolute;
+  opacity: 0;
+}
+#main-container #content-container #janrainCaptureWidget #signIn .form-action-buttons .remember-wrapper .checkbox + label, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .remember-wrapper .checkbox + label {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  color: var(--purple-cool);
+  padding-left: 40px;
+}
+#main-container #content-container #janrainCaptureWidget #signIn .form-action-buttons .remember-wrapper .checkbox + label:before, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .remember-wrapper .checkbox + label:before {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  content: "";
+  background: transparent;
+  width: 20px;
+  height: 20px;
+  box-shadow: inset 0 0 0 1px rgba(0, 130, 153, 0.3);
+  border-radius: 4px;
+  transition: 200ms ease-in-out all;
+}
+#main-container #content-container #janrainCaptureWidget #signIn .form-action-buttons .remember-wrapper .checkbox + label:after, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .remember-wrapper .checkbox + label:after {
+  position: absolute;
+  display: block;
+  top: 3px;
+  left: 7px;
+  content: "";
+  width: 4px;
+  height: 8px;
+  border-right: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  transform: rotate(45deg);
+  transition: 200ms ease-in-out all;
+}
+#main-container #content-container #janrainCaptureWidget #signIn .form-action-buttons .remember-wrapper .checkbox + label:hover:before, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .remember-wrapper .checkbox + label:hover:before {
+  box-shadow: inset 0 0 0 2px var(--purple-cool);
+}
+#main-container #content-container #janrainCaptureWidget #signIn .form-action-buttons .remember-wrapper .checkbox:checked + label:before, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .remember-wrapper .checkbox:checked + label:before {
+  background: var(--purple-cool);
+  box-shadow: none;
+}
+#main-container #content-container #janrainCaptureWidget #signIn .form-action-buttons .remember-wrapper .checkbox:checked + label:after, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .remember-wrapper .checkbox:checked + label:after {
+  border-color: white;
+}
+#main-container #content-container #janrainCaptureWidget #signIn .form-action-buttons .remember-wrapper .checkbox:disabled + label:before, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .remember-wrapper .checkbox:disabled + label:before {
+  background: var(--white-FFFFFF);
+  box-shadow: none;
+}
+#main-container #content-container #janrainCaptureWidget #signIn .form-action-buttons .remember-wrapper .checkbox:disabled + label:after, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .remember-wrapper .checkbox:disabled + label:after {
+  border-color: transparent;
+}
+#main-container #content-container #janrainCaptureWidget #signIn .form-action-buttons .remember-wrapper .checkbox:checked:disabled + label:before, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .remember-wrapper .checkbox:checked:disabled + label:before {
+  background: var(--white-FFFFFF);
+  box-shadow: none;
+}
+#main-container #content-container #janrainCaptureWidget #signIn .form-action-buttons .remember-wrapper .checkbox:checked:disabled + label:after, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .remember-wrapper .checkbox:checked:disabled + label:after {
+  border-color: #cecece;
+}
+#main-container #content-container #janrainCaptureWidget #signIn .form-action-buttons .forgot-password-link, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .forgot-password-link {
+  font-size: 16px;
+  line-height: 28px;
+  font-style: normal;
+  font-weight: 600;
+  color: var(--purple-cool);
+  display: block;
+  text-align: right;
+  position: absolute;
+  top: 19px;
+  right: 0px;
+  text-decoration: none;
+}
+@media (max-width: 767px) {
+  #main-container #content-container #janrainCaptureWidget #signIn .form-action-buttons .forgot-password-link, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .forgot-password-link {
+    font-size: 14px;
+    line-height: 20px;
+    top: 0;
+  }
+}
+#main-container #content-container #janrainCaptureWidget #signIn .form-action-buttons .forgot-password-link::after, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .forgot-password-link::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: var(--purple-cool);
+  position: relative;
+  left: 0;
+  bottom: 3px;
+  display: block;
+}
+#main-container #content-container #janrainCaptureWidget #signIn .form-action-buttons .forgot-password-link:hover, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .forgot-password-link:hover {
+  color: var(--teal-00CCC0);
+}
+#main-container #content-container #janrainCaptureWidget #signIn .form-action-buttons .forgot-password-link:hover::after, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .forgot-password-link:hover::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: var(--teal-00CCC0);
+  position: relative;
+  left: 0;
+  bottom: 3px;
+  display: block;
+}
+#main-container #content-container #janrainCaptureWidget #signIn .form-action-buttons .capture_btn.capture_processing, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .capture_btn.capture_processing {
+  margin: 83px auto 27px auto;
+}
+@media (max-width: 767px) {
+  #main-container #content-container #janrainCaptureWidget #signIn .form-action-buttons .capture_btn.capture_processing, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .capture_btn.capture_processing {
+    margin-top: 76px;
+  }
+}
+#main-container #content-container #janrainCaptureWidget #signIn .form-action-buttons .sign-in-button, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .sign-in-button {
+  margin: 83px auto 27px auto;
+}
+@media (max-width: 767px) {
+  #main-container #content-container #janrainCaptureWidget #signIn .form-action-buttons .sign-in-button, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .sign-in-button {
+    margin-top: 51px;
+    margin-bottom: 25px;
+  }
+}
+#main-container #content-container #janrainCaptureWidget #signIn .form-action-buttons .reset-pass-button, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .reset-pass-button {
+  margin: 83px auto 27px auto;
+}
+@media (max-width: 767px) {
+  #main-container #content-container #janrainCaptureWidget #signIn .form-action-buttons .reset-pass-button, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .reset-pass-button {
+    margin-top: 76px;
+  }
+}
+#main-container #content-container #janrainCaptureWidget #signIn .form-action-buttons .forgot-pass-cancel, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .forgot-pass-cancel {
+  display: inline-block;
+  background-color: #EBFBFA;
+  color: var(--purple-cool);
+  border: 1px solid var(--purple-cool);
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 13px;
+  height: 60px;
+}
+@media (max-width: 767px) {
+  #main-container #content-container #janrainCaptureWidget #signIn .form-action-buttons .forgot-pass-cancel, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .forgot-pass-cancel {
+    height: 48px;
+    margin-bottom: 0;
+  }
+}
+#main-container #content-container #janrainCaptureWidget #signIn .form-action-buttons .forgot-pass-cancel:hover, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .forgot-pass-cancel:hover {
+  text-decoration: none;
+}
+#main-container #content-container #janrainCaptureWidget #signIn .healthcare-provide, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .healthcare-provide {
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--purple-cool);
+}
+@media (max-width: 767px) {
+  #main-container #content-container #janrainCaptureWidget #signIn .healthcare-provide, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .healthcare-provide {
+    display: block;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: -0.42px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+}
+#main-container #content-container #janrainCaptureWidget #signIn .healthcare-provide a, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .healthcare-provide a {
+  display: inline-block;
+  cursor: pointer;
+  padding-left: 2px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  line-height: 28px;
+}
+@media (max-width: 767px) {
+  #main-container #content-container #janrainCaptureWidget #signIn .healthcare-provide a, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .healthcare-provide a {
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: -0.42px;
+  }
+}
+#main-container #content-container #janrainCaptureWidget #signIn .healthcare-provide a::after, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .healthcare-provide a::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: var(--purple-cool);
+  position: relative;
+  left: 0;
+  bottom: 3px;
+  display: block;
+}
+#main-container #content-container #janrainCaptureWidget #signIn .healthcare-provide a:hover, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .healthcare-provide a:hover {
+  color: var(--teal-00CCC0);
+}
+#main-container #content-container #janrainCaptureWidget #signIn .healthcare-provide a:hover::after, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .healthcare-provide a:hover::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: var(--teal-00CCC0);
+  position: relative;
+  left: 0;
+  bottom: 3px;
+  display: block;
+}
+#main-container #content-container #janrainCaptureWidget #resetPasswordRequest {
+  padding-bottom: 0;
+}
+#main-container #content-container #janrainCaptureWidget #resetPasswordRequest .capture_form_item {
+  margin-top: 32px;
+}
+@media (max-width: 767px) {
+  #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .capture_form_item {
+    margin-top: 20px;
+  }
+}
+#main-container #content-container #janrainCaptureWidget #resetPasswordRequest .capture_form_error {
+  color: var(--red-color);
+  position: relative;
+  top: 8px;
+}
+#main-container #content-container #janrainCaptureWidget #resetPasswordRequest .content-wrapper .healthcare-provide {
+  display: none;
+}
+#main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .reset-pass-button {
+  margin: 62px auto 16px auto;
+}
+@media (max-width: 767px) {
+  #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .reset-pass-button {
+    margin: 30px auto 8px auto;
+  }
+}
+#main-container #content-container #janrainCaptureWidget #resetPasswordRequest .screen-description {
+  margin: 0 0;
+  padding: 23px 0px 0px 0px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #004F5E;
+}
+@media (max-width: 767px) {
+  #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .screen-description {
+    color: #494949;
+    padding-top: 19px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+#main-container #content-container #janrainCaptureWidget #resetPasswordRequestSuccess {
+  max-width: 428px;
+  width: 100%;
+  flex-shrink: 0;
+}
+#main-container #content-container #janrainCaptureWidget #resetPasswordRequestSuccess .auth-screen {
+  padding: 5px 6px 0;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  #main-container #content-container #janrainCaptureWidget #resetPasswordRequestSuccess .auth-screen {
+    padding: 0 0 0 2px;
+    max-width: 428px;
+    width: 100%;
+  }
+}
+#main-container #content-container #janrainCaptureWidget #resetPasswordRequestSuccess .auth-screen .img-wrapper {
+  background: #E6F3F5;
+  border-radius: 10px;
+  padding: 27px 0 37px;
+}
+@media (min-width: 992px) {
+  #main-container #content-container #janrainCaptureWidget #resetPasswordRequestSuccess .auth-screen .img-wrapper {
+    padding: 36px 0 49px;
+  }
+}
+#main-container #content-container #janrainCaptureWidget #resetPasswordRequestSuccess .auth-screen .img-wrapper img {
+  margin: 0 auto;
+  display: block;
+  max-width: 166px;
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 992px) {
+  #main-container #content-container #janrainCaptureWidget #resetPasswordRequestSuccess .auth-screen .img-wrapper img {
+    max-width: 255px;
+  }
+}
+#main-container #content-container #janrainCaptureWidget #resetPasswordRequestSuccess .auth-screen .screen-heading {
+  color: #004F5E;
+  font-family: Gilroy;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: -0.63px;
+  margin: 19px 0 9px;
+}
+@media (min-width: 992px) {
+  #main-container #content-container #janrainCaptureWidget #resetPasswordRequestSuccess .auth-screen .screen-heading {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.6px;
+    margin: 20px 0 15px;
+  }
+}
+#main-container #content-container #janrainCaptureWidget #resetPasswordRequestSuccess .auth-screen .screen-description {
+  color: #494949;
+  font-size: 14px;
+  padding: 0 10px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.28px;
+  margin: 0 0 26px;
+}
+@media (min-width: 992px) {
+  #main-container #content-container #janrainCaptureWidget #resetPasswordRequestSuccess .auth-screen .screen-description {
+    color: #004F5E;
+    line-height: 20px;
+    width: 380px;
+    margin: 0 auto 35px;
+    letter-spacing: normal;
+  }
+}
+#main-container #content-container #janrainCaptureWidget #resetPasswordRequestSuccess .auth-screen .returnLogin button {
+  display: flex;
+  max-width: 285px;
+  width: 100%;
+  margin: 0 auto;
+  height: 48px;
+  padding: 3px 24px 1px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  border-radius: 24px;
+  background: #FFE600;
+  border: none;
+  box-shadow: none;
+  color: #004F5E;
+  font-family: Gilroy;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+  cursor: pointer;
+}
+#main-container #content-container #janrainCaptureWidget #resetPasswordRequestSuccess .auth-screen .returnLogin button:hover {
+  border: 3px solid #004F5E;
+}
+@media (min-width: 992px) {
+  #main-container #content-container #janrainCaptureWidget #resetPasswordRequestSuccess .auth-screen .returnLogin button {
+    max-width: 380px;
+    height: 60px;
+    padding: 0;
+    font-size: 16px;
+    border-radius: 40px;
+    margin: 0 auto 32px;
+  }
+}
+#main-container #content-container #janrainCaptureWidget #resetPassword {
+  padding: 24px 16px 0;
+}
+@media (min-width: 992px) {
+  #main-container #content-container #janrainCaptureWidget #resetPassword {
+    padding: 28px 0 12px 25px;
+    width: 100%;
+  }
+}
+#main-container #content-container #janrainCaptureWidget #resetPassword .screen-heading {
+  color: #004F5E;
+  font-family: Gilroy;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: -0.63px;
+  margin: 0 0 29px;
+}
+@media (min-width: 992px) {
+  #main-container #content-container #janrainCaptureWidget #resetPassword .screen-heading {
+    font-size: 20px;
+    margin: 0 0 23px;
+    line-height: 28px;
+    letter-spacing: -0.6px;
+  }
+}
+#main-container #content-container #janrainCaptureWidget #resetPassword .capture_form_item {
+  border: 1px solid rgba(0, 130, 153, 0.3);
+  height: 56px;
+  border-radius: 8px;
+  position: relative;
+  padding: 0;
+}
+@media (min-width: 992px) {
+  #main-container #content-container #janrainCaptureWidget #resetPassword .capture_form_item {
+    height: 60px;
+  }
+}
+#main-container #content-container #janrainCaptureWidget #resetPassword .capture_form_item.capture_form_item_newPassword {
+  margin: 0 0 10px;
+}
+@media (min-width: 992px) {
+  #main-container #content-container #janrainCaptureWidget #resetPassword .capture_form_item.capture_form_item_newPassword {
+    margin: 0 0 16px;
+  }
+}
+#main-container #content-container #janrainCaptureWidget #resetPassword .capture_form_item .capture_tip_error {
+  margin: 0 0 -29px;
+  display: none !important;
+}
+#main-container #content-container #janrainCaptureWidget #resetPassword .capture_form_item label {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  color: #004F5E;
+  display: flex;
+  padding: 8px 0 0 16px;
+}
+@media (min-width: 992px) {
+  #main-container #content-container #janrainCaptureWidget #resetPassword .capture_form_item label {
+    line-height: 20px;
+    padding: 9px 0 0 20px;
+  }
+}
+#main-container #content-container #janrainCaptureWidget #resetPassword .capture_form_item label::after {
+  content: "*";
+  color: #D40000;
+  display: block;
+  padding: 0 0 0 3px;
+}
+#main-container #content-container #janrainCaptureWidget #resetPassword .capture_form_item input {
+  padding: 0px 45px 0 16px;
+  height: 24px;
+  border: none;
+  color: #333333;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: transparent;
+  font-size: 18px;
+  font-family: Karbon, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+@media (min-width: 992px) {
+  #main-container #content-container #janrainCaptureWidget #resetPassword .capture_form_item input {
+    padding: 9px 0 0 20px;
+  }
+}
+#main-container #content-container #janrainCaptureWidget #resetPassword .capture_form_item input:active, #main-container #content-container #janrainCaptureWidget #resetPassword .capture_form_item input:focus {
+  background-color: transparent;
+  border: none;
+  color: #333333;
+  outline: 0;
+}
+#main-container #content-container #janrainCaptureWidget #resetPassword #newPassStrengthProgressWrap {
+  margin: -2px 0 0;
+  padding: 0;
+}
+@media (min-width: 992px) {
+  #main-container #content-container #janrainCaptureWidget #resetPassword #newPassStrengthProgressWrap {
+    margin: -8px 0 0;
+  }
+}
+#main-container #content-container #janrainCaptureWidget #resetPassword #newPassStrengthProgressWrap .pswd_info {
+  margin: 10px 0 20px;
+}
+@media (min-width: 992px) {
+  #main-container #content-container #janrainCaptureWidget #resetPassword #newPassStrengthProgressWrap .pswd_info {
+    margin: 8px 0 28px;
+  }
+}
+#main-container #content-container #janrainCaptureWidget #resetPassword #newPassStrengthProgressWrap .pswd_info li {
+  margin: 0 0 4px;
+}
+@media (min-width: 992px) {
+  #main-container #content-container #janrainCaptureWidget #resetPassword #newPassStrengthProgressWrap .pswd_info li {
+    line-height: 20px;
+  }
+}
+#main-container #content-container #janrainCaptureWidget #resetPassword #newPassStrengthProgressWrap .pswd_info li:last-child {
+  margin: 0;
+}
+#main-container #content-container #janrainCaptureWidget #resetPassword #password-strength-info {
+  padding-top: 17px;
+  color: #494949;
+  font-family: Gilroy;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+@media (min-width: 992px) {
+  #main-container #content-container #janrainCaptureWidget #resetPassword #password-strength-info {
+    padding-top: 16px;
+    color: #004F5E;
+    line-height: 20px;
+  }
+}
+#main-container #content-container #janrainCaptureWidget #resetPassword .valid,
+#main-container #content-container #janrainCaptureWidget #resetPassword .invalid {
+  line-height: 18px;
+}
+#main-container #content-container #janrainCaptureWidget #resetPassword #newPassStrengthProgressWrap {
+  display: none;
+}
+#main-container #content-container #janrainCaptureWidget #resetPassword .pass-toogle-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  cursor: pointer;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 1px -4px;
+  height: 34px;
+  background-image: url(./img/eye-open.svg);
+  display: inline-block;
+  width: 27px;
+  transform: translateY(-50%);
+}
+#main-container #content-container #janrainCaptureWidget #resetPassword .pass-toogle-icon.open-eye {
+  background-position: 1px -4px;
+  background-image: url(./img/eye-close.svg);
+}
+#main-container #content-container #janrainCaptureWidget #resetPassword .form-action-buttons {
+  position: relative;
+}
+#main-container #content-container #janrainCaptureWidget #resetPassword .form-action-buttons .reset-pass-button {
+  margin: 30px auto 8px;
+  border: none;
+  background: #FFE600;
+}
+#main-container #content-container #janrainCaptureWidget #resetPassword .form-action-buttons .reset-pass-button:hover {
+  border: 3px solid #004F5E;
+}
+@media (min-width: 992px) {
+  #main-container #content-container #janrainCaptureWidget #resetPassword .form-action-buttons .reset-pass-button {
+    margin: 60px 0 16px;
+  }
+}
+#main-container #content-container #janrainCaptureWidget #resetPassword .form-action-buttons .reset-pass-cancel {
+  text-decoration: none;
+  margin-bottom: 0;
+  background: #EBFBFA;
+  border: 1px solid #004F5E;
+}
+#main-container #content-container #janrainCaptureWidget #resetPassword .form-action-buttons .reset-pass-cancel:hover {
+  border: 3px solid #004F5E;
+}
+#main-container #content-container #janrainCaptureWidget #resetPassword .form-action-buttons .healthcare-provide {
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  font-family: Karbon-bold;
+}
+#main-container #content-container #janrainCaptureWidget #resetPassword .form-action-buttons .healthcare-provide a {
+  color: var(--cyan-color);
+  display: inline-block;
+  cursor: pointer;
+  padding-left: 2px;
+  font-size: 18px;
+  font-weight: 800;
+  text-decoration: underline;
+}
+#main-container #content-container #janrainCaptureWidget #resetPassword .form-action-buttons .reset-pass-cancel,
+#main-container #content-container #janrainCaptureWidget #resetPassword .form-action-buttons .reset-pass-button {
+  padding: 14px 20px 14px 20px;
+  color: #004F5E;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 24px;
+  font-family: Gilroy;
+  height: 48px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+@media (min-width: 992px) {
+  #main-container #content-container #janrainCaptureWidget #resetPassword .form-action-buttons .reset-pass-cancel,
+  #main-container #content-container #janrainCaptureWidget #resetPassword .form-action-buttons .reset-pass-button {
+    height: 60px;
+    font-size: 16px;
+    border-radius: 40px;
+  }
+}
+@media (min-width: 992px) {
+  #main-container #content-container #janrainCaptureWidget #resetPassword .auth-screen {
+    max-width: 380px;
+    width: 100%;
+  }
+}
+#main-container #content-container #janrainCaptureWidget #resetPassword .auth-screen .capture_tip_validating {
+  display: none;
+}
+#main-container #content-container #janrainCaptureWidget #resetPassword .footer-container {
+  display: none;
+}
+#main-container #content-container #janrainCaptureWidget .form-right-section {
+  padding: 0 27px 0 37px;
+  background: #E6F3F5;
+  border-radius: 10px;
+  max-width: 444px;
+  width: 100%;
+  margin-left: 6px;
+  box-sizing: border-box;
+  position: relative;
+  flex-grow: 1;
+}
+@media (max-width: 767px) {
+  #main-container #content-container #janrainCaptureWidget .form-right-section {
+    padding: 0 15px 0 17px;
+    margin: 0 6px 6px;
+    border-radius: 5px;
+  }
+}
+#main-container #content-container #janrainCaptureWidget .form-right-section .screen-heading {
+  color: var(--purple-cool);
+  padding: 28px 0px 23px 0px;
+  margin: 0px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+}
+@media (max-width: 767px) {
+  #main-container #content-container #janrainCaptureWidget .form-right-section .screen-heading {
+    padding: 25px 0px 16px 0px;
+    margin: 0 0;
+    font-size: 21px;
+    line-height: 26px;
+    letter-spacing: -0.63px;
+  }
+}
+#main-container #content-container #janrainCaptureWidget .form-right-section .form-text {
+  color: var(--purple-cool);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  max-width: 370px;
+}
+@media (max-width: 767px) {
+  #main-container #content-container #janrainCaptureWidget .form-right-section .form-text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+#main-container #content-container #janrainCaptureWidget .form-right-section .form-not-account {
+  color: var(--purple-cool);
+  font-size: 16px;
+  line-height: 28px;
+  text-decoration: none;
+  text-align: center;
+  border-top: 1px solid rgba(0, 130, 153, 0.2);
+  padding: 18px 0px 0px 0px;
+  margin-top: 56px;
+  display: block;
+  font-weight: 600;
+  position: absolute;
+  max-width: 380px;
+  width: 100%;
+  bottom: 190px;
+}
+@media (max-width: 767px) {
+  #main-container #content-container #janrainCaptureWidget .form-right-section .form-not-account {
+    position: initial;
+  }
+}
+#main-container #content-container #janrainCaptureWidget .form-right-section .form-not-account.forgot-pass-have-account {
+  margin-top: 32px;
+}
+@media (max-width: 767px) {
+  #main-container #content-container #janrainCaptureWidget .form-right-section .form-not-account.forgot-pass-have-account {
+    margin-top: 25.84px;
+  }
+}
+@media (max-width: 767px) {
+  #main-container #content-container #janrainCaptureWidget .form-right-section .form-not-account {
+    margin-top: 25px;
+    padding: 16px 0px 0px 0px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+#main-container #content-container #janrainCaptureWidget .form-right-section .form-right-button-section {
+  position: absolute;
+  max-width: 380px;
+  width: 100%;
+  bottom: 37px;
+}
+@media (max-width: 767px) {
+  #main-container #content-container #janrainCaptureWidget .form-right-section .form-right-button-section {
+    position: initial;
+  }
+}
+#main-container #content-container #janrainCaptureWidget .form-right-section .form-right-button-section .sign-up-button {
+  margin: 37px auto 27px auto;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+@media (max-width: 767px) {
+  #main-container #content-container #janrainCaptureWidget .form-right-section .form-right-button-section .sign-up-button {
+    margin: 30px auto;
+  }
+}
+#main-container #content-container #janrainCaptureWidget .form-right-section .form-right-button-section .tour-video-section {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  color: var(--purple-cool);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 100%;
+  flex: 1;
+  gap: 10px;
+  height: 28px;
+}
+@media (max-width: 767px) {
+  #main-container #content-container #janrainCaptureWidget .form-right-section .form-right-button-section .tour-video-section {
+    margin-bottom: 28px;
+    font-size: 14px;
+    line-height: 20px;
+    gap: 8.6px;
+  }
+}
+#main-container #content-container #janrainCaptureWidget .form-right-section .form-right-button-section .tour-video-section::before {
+  content: "";
+  background-image: url(./img/video-icon.svg);
+  width: 14px;
+  height: 20px;
+  background-repeat: no-repeat;
+}
+@media (max-width: 767px) {
+  #main-container #content-container #janrainCaptureWidget .form-right-section .form-right-button-section .tour-video-section::before {
+    height: 16px;
+    width: 9.6px;
+    background-size: cover;
+  }
+}
+#main-container #content-container #janrainCaptureWidget .form-right-section .form-right-button-section .tour-video-section span {
+  border-bottom: 1px solid var(--purple-cool);
+  line-height: 21px;
+}
+@media (max-width: 767px) {
+  #main-container #content-container #janrainCaptureWidget .form-right-section .form-right-button-section .tour-video-section span {
+    line-height: 20px;
+  }
+}
+#main-container #content-container #janrainCaptureWidget .form-right-section .form-right-button-section .tour-video-section:hover {
+  color: var(--teal-00CCC0);
+}
+#main-container #content-container #janrainCaptureWidget .form-right-section .form-right-button-section .tour-video-section:hover::before {
+  content: "";
+  background-image: url(./img/video-icon-teal.svg);
+  width: 14px;
+  height: 20px;
+  background-repeat: no-repeat;
+}
+@media (max-width: 767px) {
+  #main-container #content-container #janrainCaptureWidget .form-right-section .form-right-button-section .tour-video-section:hover::before {
+    height: 16px;
+    width: 9.6px;
+    background-size: cover;
+  }
+}
+#main-container #content-container #janrainCaptureWidget .form-right-section .form-right-button-section .tour-video-section:hover span {
+  border-bottom: 1px solid var(--teal-00CCC0);
+  padding-left: 5px;
+}
+#main-container .login-footer-wrapper {
+  margin-left: 40px;
+  margin-right: 40px;
+  color: var(--purple-cool);
+}
+@media (max-width: 767px) {
+  #main-container .login-footer-wrapper {
+    margin: 0 16px;
+  }
+}
+#main-container .login-footer-wrapper .only-desk {
+  display: block;
+}
+@media (max-width: 767px) {
+  #main-container .login-footer-wrapper .only-desk {
+    display: none !important;
+  }
+}
+#main-container .login-footer-wrapper .only-mob {
+  display: none !important;
+}
+@media (max-width: 767px) {
+  #main-container .login-footer-wrapper .only-mob {
+    display: block !important;
+  }
+}
+#main-container .login-footer-wrapper .footer-footnote {
+  margin-top: 36px;
+}
+@media (max-width: 767px) {
+  #main-container .login-footer-wrapper .footer-footnote {
+    margin-top: 28px;
+  }
+}
+#main-container .login-footer-wrapper .footer-footnote .bold {
+  font-weight: 600;
+}
+#main-container .login-footer-wrapper .footer-footnote p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--purple-cool);
+  text-align: center;
+  line-height: 24px;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  #main-container .login-footer-wrapper .footer-footnote p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+#main-container .login-footer-wrapper .footer-footnote p a {
+  color: var(--purple-cool);
+  text-decoration: none;
+  display: inline-block;
+  padding-left: 3px;
+}
+#main-container .login-footer-wrapper .footer-footnote p a:hover {
+  text-decoration: none;
+}
+#main-container .white-bg {
+  margin: 100px 0px 57px;
+  padding: 19px 20px;
+  background-color: var(--white-FFFFFF);
+  border-radius: 20px;
+}
+@media (max-width: 767px) {
+  #main-container .white-bg {
+    padding: 14px 16px 10px;
+    border-radius: 8px;
+    margin: 49px 0px 27px;
+  }
+}
+#main-container .white-bg p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  margin: 0;
+  color: var(--purple-cool);
+}
+@media (max-width: 767px) {
+  #main-container .white-bg p {
+    font-size: 11px;
+    line-height: 16px;
+  }
+}
+#main-container .white-bg p a {
+  color: var(--purple-cool);
+  text-decoration: none;
+  position: relative;
+}
+#main-container .white-bg p a::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  display: block;
+  background-color: var(--purple-cool);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#main-container .white-bg p sup {
+  vertical-align: text-bottom;
+  font-size: 10px;
+}
+@media (max-width: 767px) {
+  #main-container .white-bg p sup {
+    vertical-align: top;
+    font-size: 8px;
+  }
+}
+#main-container .contact-section {
+  display: flex;
+}
+@media (max-width: 767px) {
+  #main-container .contact-section {
+    display: block;
+  }
+}
+#main-container .contact-section sup {
+  vertical-align: text-bottom;
+  font-size: 10px;
+}
+@media (max-width: 767px) {
+  #main-container .contact-section sup {
+    vertical-align: top;
+    font-size: 8px;
+  }
+}
+#main-container .contact-section .call-sec {
+  display: flex;
+  flex-shrink: 0;
+}
+@media (max-width: 767px) {
+  #main-container .contact-section .call-sec {
+    align-items: center;
+    padding-bottom: 23px;
+    border-bottom: 1px solid rgba(0, 130, 153, 0.1);
+    margin-bottom: 30px;
+  }
+}
+#main-container .contact-section .call-sec .call-icon {
+  background-image: url(./img/phone.svg);
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+@media (max-width: 767px) {
+  #main-container .contact-section .call-sec .call-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+    background-size: cover;
+  }
+}
+#main-container .contact-section .call-sec p {
+  margin: 0;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  width: 255px;
+  margin-right: 45px;
+}
+@media (max-width: 767px) {
+  #main-container .contact-section .call-sec p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+#main-container .contact-section .call-sec p:last-child {
+  font-size: 14px;
+}
+@media (max-width: 767px) {
+  #main-container .contact-section .call-sec p:last-child {
+    font-size: 11px;
+    line-height: 16px;
+  }
+}
+@media (max-width: 767px) {
+  #main-container .contact-section .call-sec p:first-child {
+    border-bottom: 1px solid var(--purple-cool);
+    width: 77%;
+    background-size: cover;
+  }
+}
+#main-container .contact-section .call-sec p .am-pm {
+  font-size: 10px;
+}
+@media (max-width: 767px) {
+  #main-container .contact-section .call-sec p .am-pm {
+    font-size: 9px;
+  }
+}
+#main-container .contact-section .contact-text {
+  margin-top: -4px;
+}
+@media (max-width: 767px) {
+  #main-container .contact-section .contact-text {
+    margin-top: 0;
+  }
+}
+#main-container .contact-section .contact-text p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  #main-container .contact-section .contact-text p {
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 16px;
+    margin-bottom: 10px;
+  }
+}
+#main-container .hr-line {
+  height: 1px;
+  background: rgba(0, 130, 153, 0.1);
+  margin: 34px 0 54px;
+}
+@media (max-width: 767px) {
+  #main-container .hr-line {
+    margin: 30px 0 13px;
+  }
+}
+#main-container .footer-last {
+  display: flex;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+@media (max-width: 767px) {
+  #main-container .footer-last {
+    display: block;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 16px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+}
+#main-container .footer-last .logo {
+  flex-shrink: 0;
+}
+#main-container .footer-last .logo .logo-img {
+  background-image: url(./img/tremfya-logo.svg);
+  width: 166px;
+  height: 56px;
+  flex-shrink: 0;
+  margin-right: 194px;
+  margin-bottom: 27px;
+}
+@media (max-width: 767px) {
+  #main-container .footer-last .logo .logo-img {
+    width: 87px;
+    height: 30px;
+    background-size: cover;
+    margin-bottom: 12px;
+  }
+}
+@media (max-width: 767px) {
+  #main-container .footer-last .logo p {
+    margin: 0;
+    border-top: 1px solid rgba(0, 130, 153, 0.1);
+    padding-top: 30px;
+  }
+}
+#main-container .footer-last .content ul {
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+}
+#main-container .footer-last .content ul li {
+  list-style: none;
+  display: inline-block;
+  font-weight: 600;
+}
+@media (max-width: 767px) {
+  #main-container .footer-last .content ul li {
+    margin: 0 22px 16px 0;
+  }
+}
+#main-container .footer-last .content ul li:nth-child(1) {
+  min-width: 120px;
+}
+#main-container .footer-last .content ul li:nth-child(2) {
+  min-width: 87px;
+}
+@media (max-width: 767px) {
+  #main-container .footer-last .content ul li:last-child {
+    margin-bottom: 90px;
+  }
+}
+#main-container .footer-last .content ul li:last-child .need-help-desk {
+  display: flex;
+  height: 30px;
+  padding: 0 15px;
+  align-items: center;
+  gap: 10px;
+  color: var(--purple-cool);
+  flex-shrink: 0;
+  font-weight: 600;
+  border: 1px solid var(--purple-cool);
+  border-radius: 20px;
+  text-decoration: none;
+  white-space: nowrap;
+  margin-left: 43px;
+}
+@media (max-width: 767px) {
+  #main-container .footer-last .content ul li:last-child .need-help-desk {
+    display: none;
+  }
+}
+#main-container .footer-last .content .need-help-mob {
+  display: none;
+  height: 30px;
+  padding: 0 15px;
+  align-items: center;
+  gap: 10px;
+  color: var(--purple-cool);
+  flex-shrink: 0;
+  font-weight: 600;
+  border: 1px solid var(--purple-cool);
+  border-radius: 20px;
+  text-decoration: none;
+  margin-left: 68px;
+}
+@media (max-width: 767px) {
+  #main-container .footer-last .content .need-help-mob {
+    display: inline-flex;
+    height: 24px;
+    padding: 0 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 16px;
+    background: #EBFBFA;
+    position: absolute;
+    top: 3px;
+    right: 0;
+  }
+}
+#main-container .footer-last .content .footnote {
+  margin: 37px 0 60px;
+}
+@media (max-width: 767px) {
+  #main-container .footer-last .content .footnote {
+    margin: 10px 0;
+  }
+}/*# sourceMappingURL=styles.css.map */
