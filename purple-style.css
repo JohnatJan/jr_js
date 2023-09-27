@@ -244,7 +244,7 @@ body .gray-bg {
 }
 #main-container #content-container #janrainCaptureWidget {
   background-color: var(--white-FFFFFF);
-  outline: 10px solid var(--teal-00CCC0);
+  outline: 10px solid var(--purple-cool);
   display: flex;
   justify-content: space-between;
   max-width: 920px;
@@ -258,7 +258,7 @@ body .gray-bg {
     grid-template-columns: repeat(1, 1fr);
     gap: 30px;
     display: grid;
-    outline: 6px solid var(--teal-00CCC0);
+    outline: 6px solid var(--purple-cool);
     border-radius: 15px;
     max-width: 317px;
     padding: 0;
@@ -646,13 +646,13 @@ body .gray-bg {
   display: block;
 }
 #main-container #content-container #janrainCaptureWidget #signIn .form-action-buttons .forgot-password-link:hover, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .forgot-password-link:hover {
-  color: var(--teal-00CCC0);
+  color: var(--purple-cool);
 }
 #main-container #content-container #janrainCaptureWidget #signIn .form-action-buttons .forgot-password-link:hover::after, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .form-action-buttons .forgot-password-link:hover::after {
   content: "";
   height: 1px;
   width: 100%;
-  background-color: var(--teal-00CCC0);
+  background-color: var(--purple-cool);
   position: relative;
   left: 0;
   bottom: 3px;
@@ -746,13 +746,13 @@ body .gray-bg {
   display: block;
 }
 #main-container #content-container #janrainCaptureWidget #signIn .healthcare-provide a:hover, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .healthcare-provide a:hover {
-  color: var(--teal-00CCC0);
+  color: var(--purple-cool);
 }
 #main-container #content-container #janrainCaptureWidget #signIn .healthcare-provide a:hover::after, #main-container #content-container #janrainCaptureWidget #resetPasswordRequest .healthcare-provide a:hover::after {
   content: "";
   height: 1px;
   width: 100%;
-  background-color: var(--teal-00CCC0);
+  background-color: var(--purple-cool);
   position: relative;
   left: 0;
   bottom: 3px;
@@ -1306,7 +1306,7 @@ body .gray-bg {
   }
 }
 #main-container #content-container #janrainCaptureWidget .form-right-section .form-right-button-section .tour-video-section:hover {
-  color: var(--teal-00CCC0);
+  color: var(--purple-cool);
 }
 #main-container #content-container #janrainCaptureWidget .form-right-section .form-right-button-section .tour-video-section:hover::before {
   content: "";
@@ -1323,7 +1323,7 @@ body .gray-bg {
   }
 }
 #main-container #content-container #janrainCaptureWidget .form-right-section .form-right-button-section .tour-video-section:hover span {
-  border-bottom: 1px solid var(--teal-00CCC0);
+  border-bottom: 1px solid var(--purple-cool);
   padding-left: 5px;
 }
 #main-container .login-footer-wrapper {
