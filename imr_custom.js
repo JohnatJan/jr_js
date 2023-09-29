@@ -26,9 +26,7 @@
                 if(janrain.gizmo.screenToRender == 'verifyEmailSuccess') 
                 {
                     janrain.capture.ui.renderScreen("changePasswordNoAuthForm");
-                    //Show set password controls
-                    const urlParams = new URLSearchParams(window.location.search);
-                    const emailAddress = urlParams.get('login_hint');
+                    const emailAddress = getLoginHint();
                     
                 }
         });
