@@ -7,18 +7,29 @@
         janrain.events.onCaptureRenderComplete.addHandler(function(result) {
                 console.log(janrain.gizmo.screenToRender);
                 //Psuedo-Activation Path
+                if(janrain.gizmo.screenToRender == 'signIn') 
+                {
+                    document.getElementsByName("signInEmailAddress")[0].value = getLoginHint(); 
+                }
+            
+                //Grab Login_hint from QS, Store in localstorage?
+                if(janrain.gizmo.screenToRender == "changePasswordNoAuthForm") {
+                    //store the login hint later use.
+                }
+            
+                //Kill session after no-auth reset password.
+                if(janrain.gizmo.screenToRender == "changePasswordSuccess") {
+                    janrain.capture.ui.endCaptureSession();
+                    janrain.capture.ui.renderScreen("signIn");
+                }
+                
                 if(janrain.gizmo.screenToRender == 'verifyEmailSuccess') 
                 {
                     janrain.capture.ui.renderScreen("changePasswordNoAuthForm");
                     //Show set password controls
                     const urlParams = new URLSearchParams(window.location.search);
                     const emailAddress = urlParams.get('login_hint');
-                    document.getElementsByName("signInEmailAddress")[0].value = emailAddress; 
-                }
-                //Kill session after no-auth reset password.
-                if(janrain.gizmo.screenToRender == "changePasswordSuccess") {
-                    janrain.capture.ui.endCaptureSession();
-                    janrain.capture.ui.renderScreen("signIn");
+                    
                 }
         });
 
@@ -31,3 +42,10 @@
       window.attachEvent('onload', isReady);
     }
 })();
+function getLoginHint()
+{
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const emailAddress = urlParams.get('login_hint');
+    return emailAddress
+}
