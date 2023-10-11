@@ -14,7 +14,7 @@
                         
                 //Kill session after no-auth reset password.
                 if(screenBeingRendered == "changePasswordSuccess" && !janrain.settings["ActivatingUser"]) {
-                    janrain.capture.ui.endCaptureSession();
+                    console.log("Hit - janrain.capture.ui.endCaptureSession()");
                 }
                 
                 if(screenBeingRendered == 'verifyEmailSuccess') 
