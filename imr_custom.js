@@ -13,12 +13,13 @@
                 }
                         
                 //Kill session after no-auth reset password.
-                if(janrain.gizmo.screenToRender == "changePasswordSuccess") {
+                if(janrain.gizmo.screenToRender == "changePasswordSuccess" && !janrain.settings["ActivatingUser"]) {
                     janrain.capture.ui.endCaptureSession();
                 }
                 
                 if(janrain.gizmo.screenToRender == 'verifyEmailSuccess') 
                 {
+                    janrain.settings["ActivatingUser"] = true;
                     event.stopPropagation();
                     janrain.capture.ui.renderScreen("manageProfile_security");
                 }
