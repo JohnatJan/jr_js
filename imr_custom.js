@@ -11,21 +11,15 @@
                 {
                     document.getElementsByName("signInEmailAddress")[0].value = getLoginHint(); 
                 }
-            
-                //Grab Login_hint from QS, Store in localstorage?
-                if(janrain.gizmo.screenToRender == "changePasswordNoAuthForm") {
-                    //store the login hint later use.
-                }
-            
+                        
                 //Kill session after no-auth reset password.
                 if(janrain.gizmo.screenToRender == "changePasswordSuccess") {
                     janrain.capture.ui.endCaptureSession();
-                    janrain.capture.ui.renderScreen("signIn");
                 }
                 
                 if(janrain.gizmo.screenToRender == 'verifyEmailSuccess') 
                 {
-                    janrain.capture.ui.renderScreen("resetPassword");
+                    janrain.capture.ui.renderScreen("manageProfile_security");
                 }
         });
 
