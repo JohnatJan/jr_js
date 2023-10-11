@@ -7,17 +7,17 @@
         janrain.events.onCaptureRenderComplete.addHandler(function(result) {
                 screenBeingRendered = janrain.gizmo.screenToRender;
                 //Psuedo-Activation Path
-                if(janrain.gizmo.screenToRender == 'signIn') 
+                if(screenBeingRendered == 'signIn') 
                 {
                     document.getElementsByName("signInEmailAddress")[0].value = getLoginHint(); 
                 }
                         
                 //Kill session after no-auth reset password.
-                if(janrain.gizmo.screenToRender == "changePasswordSuccess" && !janrain.settings["ActivatingUser"]) {
+                if(screenBeingRendered == "changePasswordSuccess" && !janrain.settings["ActivatingUser"]) {
                     janrain.capture.ui.endCaptureSession();
                 }
                 
-                if(janrain.gizmo.screenToRender == 'verifyEmailSuccess') 
+                if(screenBeingRendered == 'verifyEmailSuccess') 
                 {
                     janrain.settings["ActivatingUser"] = true;
                     event.stopPropagation();
