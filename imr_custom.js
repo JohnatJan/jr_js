@@ -19,6 +19,7 @@
                 
                 if(janrain.gizmo.screenToRender == 'verifyEmailSuccess') 
                 {
+                    event.stopPropagation();
                     janrain.capture.ui.renderScreen("manageProfile_security");
                 }
         });
