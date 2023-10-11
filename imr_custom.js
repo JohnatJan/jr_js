@@ -21,7 +21,7 @@
                 {
                     janrain.settings["ActivatingUser"] = true;
                     event.stopPropagation();
-                    janrain.capture.ui.renderScreen("manageProfile_security");
+                    janrain.capture.ui.renderScreen("resetPassword");
                     alert("Stop.");
                 }
         });
