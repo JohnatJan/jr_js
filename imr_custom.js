@@ -22,6 +22,7 @@
                     janrain.settings["ActivatingUser"] = true;
                     event.stopPropagation();
                     janrain.capture.ui.renderScreen("manageProfile_security");
+                    alert("Stop.");
                 }
         });
 
