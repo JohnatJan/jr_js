@@ -5,7 +5,7 @@
     function isReady() { 
         janrain.ready = true; 
         janrain.events.onCaptureRenderComplete.addHandler(function(result) {
-                console.log(janrain.gizmo.screenToRender);
+                screenBeingRendered = janrain.gizmo.screenToRender;
                 //Psuedo-Activation Path
                 if(janrain.gizmo.screenToRender == 'signIn') 
                 {
@@ -25,9 +25,7 @@
                 
                 if(janrain.gizmo.screenToRender == 'verifyEmailSuccess') 
                 {
-                    janrain.capture.ui.renderScreen("changePasswordNoAuthForm");
-                    const emailAddress = getLoginHint();
-                    
+                    janrain.capture.ui.renderScreen("resetPassword");
                 }
         });
 
