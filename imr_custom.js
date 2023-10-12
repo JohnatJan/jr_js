@@ -4,6 +4,9 @@
     
     function isReady() { 
         janrain.ready = true; 
+        janrain.events.onCaptureSaveSuccess.addHandler(function(result) {
+            console.log(result);
+        }
         janrain.events.onCaptureRenderComplete.addHandler(function(result) {
             try {
                 console.log(result)
