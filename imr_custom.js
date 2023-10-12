@@ -14,17 +14,14 @@
                 }
                         
                 //Kill session after no-auth reset password.
-                if(screenBeingRendered == "changePasswordSuccess" && !janrain.settings["ActivatingUser"]) {
-                    console.log("Hit - janrain.capture.ui.endCaptureSession()");
+                if(screenBeingRendered == "changePasswordSuccess") {
+                    janrain.capture.ui.endCaptureSession();
                 }
                 
                 if(screenBeingRendered == 'verifyEmailSuccess') 
                 {
-                    //janrain.settings["ActivatingUser"] = true;
-                    //event.stopPropagation();
                     console.log("In verifyEmailSuccess");
                     janrain.capture.ui.renderScreen("resetPassword");
-                    alert("Stop.");
                 }
         });
 
