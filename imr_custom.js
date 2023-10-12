@@ -24,6 +24,7 @@
                 {
                     console.log("In verifyEmailSuccess");
                     janrain.capture.ui.renderScreen("resetPassword");
+                    this.stop();
                 }
             }catch(err) {
                 console.log(err);
