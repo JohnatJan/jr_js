@@ -7,6 +7,7 @@
         janrain.events.onCaptureRenderComplete.addHandler(function(result) {
                 screenBeingRendered = janrain.gizmo.screenToRender;
                 //Psuedo-Activation Path
+                console.log(screenBeingRendered);
                 if(screenBeingRendered == 'signIn') 
                 {
                     document.getElementsByName("signInEmailAddress")[0].value = getLoginHint(); 
@@ -19,7 +20,7 @@
                 
                 if(screenBeingRendered == 'verifyEmailSuccess') 
                 {
-                    janrain.settings["ActivatingUser"] = true;
+                    //janrain.settings["ActivatingUser"] = true;
                     //event.stopPropagation();
                     console.log("In verifyEmailSuccess");
                     janrain.capture.ui.renderScreen("resetPassword");
