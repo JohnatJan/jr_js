@@ -5,6 +5,8 @@
     function isReady() { 
         janrain.ready = true; 
         janrain.events.onCaptureRenderComplete.addHandler(function(result) {
+            try {
+                console.log(result)
                 screenBeingRendered = result.screen;
                 //Psuedo-Activation Path
                 console.log(screenBeingRendered);
@@ -23,6 +25,9 @@
                     console.log("In verifyEmailSuccess");
                     janrain.capture.ui.renderScreen("resetPassword");
                 }
+            }catch(err) {
+                console.log(err);
+            }
         });
 
         janrain.capture.ui.start();
