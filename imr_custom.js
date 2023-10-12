@@ -20,7 +20,8 @@
                 if(screenBeingRendered == 'verifyEmailSuccess') 
                 {
                     janrain.settings["ActivatingUser"] = true;
-                    event.stopPropagation();
+                    //event.stopPropagation();
+                    console.log("In verifyEmailSuccess");
                     janrain.capture.ui.renderScreen("resetPassword");
                     alert("Stop.");
                 }
