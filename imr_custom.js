@@ -5,7 +5,7 @@
     function isReady() { 
         janrain.ready = true; 
         janrain.events.onCaptureRenderComplete.addHandler(function(result) {
-                screenBeingRendered = janrain.gizmo.screenToRender;
+                screenBeingRendered = result.screen;
                 //Psuedo-Activation Path
                 console.log(screenBeingRendered);
                 if(screenBeingRendered == 'signIn') 
