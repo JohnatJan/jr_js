@@ -10,7 +10,13 @@
         janrain.events.onCaptureRenderStart.addHandler(function(result) {
             console.log(result);
         });
-        
+        janrain.events.onCaptureEmailVerificationSuccess.addHandler(function(results) {
+            console.log(result);
+            console.log("In verifyEmailSuccess");
+            janrain.capture.ui.renderScreen("resetPassword");
+            this.stop();
+        })
+
         janrain.events.onCaptureRenderComplete.addHandler(function(result) {
             try {
                 console.log(result)
@@ -30,12 +36,7 @@
                 {
                     console.log("In verifyEmail");
                 }
-                if(screenBeingRendered == 'verifyEmailSuccess') 
-                {
-                    console.log("In verifyEmailSuccess");
-                    janrain.capture.ui.renderScreen("resetPassword");
-                    this.stop();
-                }
+                
             }catch(err) {
                 console.log(err);
             }
