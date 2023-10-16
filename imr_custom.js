@@ -8,12 +8,10 @@
             console.log(result);
         });
         janrain.events.onCaptureRenderStart.addHandler(function(result) {
-            console.log(result);
         });
         janrain.events.onCaptureEmailVerificationSuccess.addHandler(function(results) {
             console.log(result);
             console.log("In verifyEmailSuccess");
-            setTimeout(function() { janrain.capture.ui.renderScreen("resetPassword"); },500);
             
         })
 
@@ -29,12 +27,15 @@
                 }
                         
                 //Kill session after no-auth reset password.
-                if(screenBeingRendered == "changePasswordSuccess") {
+                if(screenBeingRendered == "resetPasswordSuccess") {
+                    console.log("in resetPasswordSuccess");
                     janrain.capture.ui.endCaptureSession();
                     location.href = "https://www.janssenscience.com";
                 }
                 if(screenBeingRendered == 'verifyEmail') 
                 {
+                    result.
+                    janrain.capture.ui.renderScreen("resetPassword");
                     console.log("In verifyEmail");
                 }
                 
