@@ -7,6 +7,10 @@
         janrain.events.onCaptureSaveSuccess.addHandler(function(result) {
             console.log(result);
         });
+        janrain.events.onCaptureRenderStart.addHandler(function(result) {
+            console.log(result);
+        });
+        
         janrain.events.onCaptureRenderComplete.addHandler(function(result) {
             try {
                 console.log(result)
@@ -22,7 +26,10 @@
                 if(screenBeingRendered == "changePasswordSuccess") {
                     janrain.capture.ui.endCaptureSession();
                 }
-                
+                if(screenBeingRendered == 'verifyEmail') 
+                {
+                    console.log("In verifyEmail");
+                }
                 if(screenBeingRendered == 'verifyEmailSuccess') 
                 {
                     console.log("In verifyEmailSuccess");
