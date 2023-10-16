@@ -13,8 +13,8 @@
         janrain.events.onCaptureEmailVerificationSuccess.addHandler(function(results) {
             console.log(result);
             console.log("In verifyEmailSuccess");
-            janrain.capture.ui.renderScreen("resetPassword");
-            this.stop();
+            setTimeout(function() { janrain.capture.ui.renderScreen("resetPassword"); },500);
+            
         })
 
         janrain.events.onCaptureRenderComplete.addHandler(function(result) {
