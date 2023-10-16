@@ -31,6 +31,7 @@
                 //Kill session after no-auth reset password.
                 if(screenBeingRendered == "changePasswordSuccess") {
                     janrain.capture.ui.endCaptureSession();
+                    location.href = "https://www.janssenscience.com";
                 }
                 if(screenBeingRendered == 'verifyEmail') 
                 {
