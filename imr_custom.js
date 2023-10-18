@@ -32,7 +32,7 @@
                     janrain.capture.ui.endCaptureSession();
                     location.href = "https://www.janssenscience.com";
                 }
-                if(screenBeingRendered == 'verifyEmail') 
+                if(screenBeingRendered == 'verifyEmailSuccess') 
                 {
                     result.
                     janrain.capture.ui.renderScreen("resetPassword");
