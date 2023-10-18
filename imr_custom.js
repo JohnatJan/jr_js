@@ -34,7 +34,6 @@
                 }
                 if(screenBeingRendered == 'verifyEmailSuccess') 
                 {
-                    result.
                     janrain.capture.ui.renderScreen("resetPassword");
                     console.log("In verifyEmail");
                 }
