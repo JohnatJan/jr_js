@@ -30,7 +30,6 @@
                 if(screenBeingRendered == "resetPasswordSuccess") {
                     console.log("in resetPasswordSuccess");
                     janrain.capture.ui.endCaptureSession();
-                    location.href = "http://www.google.com";
                 }
                 if(screenBeingRendered == 'verifyEmailSuccess') 
                 {
