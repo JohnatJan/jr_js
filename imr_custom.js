@@ -30,7 +30,7 @@
                 if(screenBeingRendered == "resetPasswordSuccess") {
                     console.log("in resetPasswordSuccess");
                     janrain.capture.ui.endCaptureSession();
-                    location.href = "https://janssencarepath--uat.sandbox.my.site.com/JanssenPatient/services/authcallback/OpenIdDefault";
+                    location.href = "http://www.google.com";
                 }
                 if(screenBeingRendered == 'verifyEmailSuccess') 
                 {
