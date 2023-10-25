@@ -28,6 +28,7 @@
                         
                 //Kill session after no-auth reset password.
                 if(screenBeingRendered == "resetPasswordSuccess") {
+                    janrain.settings.isPostReset = true;
                     console.log("in resetPasswordSuccess");
                     janrain.capture.ui.endCaptureSession();
                     $('#signIn .screen-description').html("<b style='color:red'>Your password has been successfully Updated.</b>");
@@ -36,6 +37,11 @@
                 {
                     janrain.capture.ui.renderScreen("resetPassword");
                     console.log("In verifyEmail");
+                }
+                if(screenBeingRendered == 'initialLoadScreen' && janrain.settings.isPostReset) 
+                {
+                    console.log("in InitialLoadScreen Only after a Reset");
+                    $('#initialLoadScreen').html('<a class="sign-up-button" type="submit" href="#">Sign In</a>'
                 }
                 
             }catch(err) {
