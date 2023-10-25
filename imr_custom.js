@@ -24,6 +24,9 @@
                 if(screenBeingRendered == 'signIn') 
                 {
                     document.getElementsByName("signInEmailAddress")[0].value = getLoginHint(); 
+                    $('head').append('<meta http-equiv="Content-Security-Policy" content="default-src \'self\'">');
+
+
                 }
                         
                 //Kill session after no-auth reset password.
