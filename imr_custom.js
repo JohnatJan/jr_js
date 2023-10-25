@@ -30,7 +30,7 @@
                 if(screenBeingRendered == "resetPasswordSuccess") {
                     janrain.settings.isPostReset = true;
                     console.log("in resetPasswordSuccess");
-                    janrain.capture.ui.endCaptureSession();
+                    //janrain.capture.ui.endCaptureSession();
                     $('#signIn .screen-description').html("<b style='color:red'>Your password has been successfully Updated.</b>");
                 }
                 if(screenBeingRendered == 'verifyEmailSuccess') 
@@ -41,7 +41,7 @@
                 if(screenBeingRendered == 'initialLoadScreen' && janrain.settings.isPostReset) 
                 {
                     console.log("in InitialLoadScreen Only after a Reset");
-                    $('#initialLoadScreen').html('<a class="sign-up-button" type="submit" href="#">Sign In</a>'
+                    $('#initialLoadScreen').html('<h2>Your password has been successfully Updated.</h2><br /><a class="sign-up-button" type="submit" href="#">Sign In</a>'
                 }
                 
             }catch(err) {
