@@ -31,7 +31,9 @@
                 if(screenBeingRendered == "resetPasswordSuccess") {
                     janrain.settings.isPostReset = true;
                     console.log("in resetPasswordSuccess");
-                    //janrain.capture.ui.endCaptureSession();
+                    janrain.capture.ui.endCaptureSession();
+                    result.stopPropagation();
+                    
                     $('#signIn .screen-description').html("<b style='color:red'>Your password has been successfully Updated.</b>");
                 }
                 if(screenBeingRendered == 'verifyEmailSuccess') 
